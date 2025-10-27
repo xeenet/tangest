@@ -1,0 +1,112 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>堂测网 - 数据驱动，因材施教</title>
+    <style>
+      :root{
+        --bg: #f6fbff;
+        --accent: #2563eb;
+        --muted: #6b7280;
+        --card: #ffffff;
+        --max-width: 1120px;
+      }
+      *{box-sizing:border-box}
+      body{font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,\"PingFang SC\",\"Noto Sans CJK SC\",sans-serif;margin:0;color:#0f172a;background:var(--bg)}
+      .app{display:flex;min-height:100vh}
+      .sidebar{width:220px;background:linear-gradient(180deg,#fff,#fbfdff);border-right:1px solid #e6eef8;padding:28px}
+      .logo{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--accent);font-size:18px;margin-bottom:18px}
+      .nav{margin-top:8px}
+      .nav a{display:block;color:#111827;text-decoration:none;padding:10px 8px;border-radius:8px;margin-bottom:6px}
+      .nav a:hover{background:#eef6ff}
+      .main{flex:1;padding:40px;display:flex;justify-content:center}
+      .container{width:100%;max-width:var(--max-width)}
+
+      /* Hero */
+  .hero{display:flex;gap:32px;align-items:center;background:var(--card);padding:36px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+  .hero-left{flex:1;align-self:flex-start}
+  .hero-right{align-self:flex-start}
+      .eyebrow{color:var(--muted);font-size:13px;margin-bottom:8px}
+      h1{font-size:34px;margin:6px 0 12px;line-height:1.15}
+      .lead{color:#334155;line-height:1.8;font-size:16px}
+      .cta{margin-top:18px;display:flex;gap:12px}
+      .btn{background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
+      .btn.secondary{background:transparent;color:var(--accent);border:1px solid rgba(37,99,235,0.12)}
+      .hero-right img{max-width:420px;border-radius:10px;display:block}
+
+      /* Cards */
+      .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+      .card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 14px rgba(15,23,42,0.04)}
+      .card h3{margin:0 0 8px;font-size:18px;color:#0f172a}
+      .card p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
+
+      /* Sections */
+      section{margin-top:28px}
+  .two-col{display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:flex-start;background:transparent}
+  .two-col .two-col-left{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 14px rgba(15,23,42,0.04)}
+  .two-col .two-col-right{display:flex;justify-content:center;align-items:flex-start;align-self:flex-start}
+  .two-col .two-col-right img{width:400px;max-width:100%;border-radius:8px;display:block;margin-top:0}
+  /* Support cases where markup uses .two-col-right without a .two-col wrapper */
+  .two-col-right{display:flex;justify-content:center;align-items:flex-start;align-self:flex-start}
+  .two-col-right img{width:400px;max-width:100%;border-radius:8px;display:block;margin-top:0}
+      .section-title{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+      .section-title h2{margin:0;font-size:20px}
+      .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+
+      /* FAQ */
+      .faq .q{background:var(--card);padding:14px;border-radius:8px;margin-bottom:10px}
+      .q h4{margin:0 0 6px}
+      .q p{margin:0;color:var(--muted);font-size:14px}
+
+      footer{margin-top:36px;color:var(--muted);font-size:13px;text-align:center}
+
+      /* Responsive */
+      @media (max-width:900px){
+        .hero{flex-direction:column}
+        .cards{grid-template-columns:repeat(1,1fr)}
+        .grid-2{grid-template-columns:1fr}
+        .sidebar{display:none}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="logo">堂测网</div>
+        <nav class="nav">
+          <a href="/">首页</a>
+          <a href="/services">堂测动态</a>
+          <a href="/system">相关报道</a>
+          <a href="/faq">帮助</a>
+        </nav>
+      </aside>
+      <main class="main">
+        <section class="hero">
+          <div class="hero-left">
+              <div class="section-title"><h2>新闻摘要</h2></div>
+              <ul class="news-list" style="list-style:none;padding:0;margin:0;">
+                <li class="news-item" style="background:var(--card);padding:16px;border-radius:8px;box-shadow:0 4px 10px rgba(15,23,42,0.04);margin-bottom:12px;">
+                  <h3 style="margin:0 0 8px;font-size:18px;color:var(--accent);"><a href="news/251027-1.html">2025一线老师必备：适合老师上课使用的系统</a></h3>
+                  <p style="margin:0 0 10px;color:var(--muted);line-height:1.6;">课堂上提升教学效率的工具种类繁多，涵盖了课件制作、课堂互动、教学管理等多个方面。本文推荐了老师们一致好评的课堂教学神器。</p>
+                  <div style="font-size:13px;color:var(--muted);">发布时间：<time datetime="2025-10-27">2025年10月27日</time></div>
+                </li>
+              </ul>
+
+            </div>
+          <div class="two-col-right">
+            <img src="imgs/slogan.png" alt="堂测示意图" width="600px" />
+          </div>
+        </section>
+      </main>
+    </div>
+    <div>
+<section>
+<footer>
+          © 2025 堂测网 &nbsp;|&nbsp; 数据驱动，因材施教 &nbsp;•&nbsp; <a href="#contact" style="color:var(--accent);text-decoration:none">联系我们</a>
+</footer>
+</section>    
+    </div>
+
+  </body>
+</html>
