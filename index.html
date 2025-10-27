@@ -1,11 +1,298 @@
 ﻿<!doctype html>
-<html>
+<html lang="zh-CN">
   <head>
-    <meta charset='utf-8'>
-    <title>Tangest</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>堂测网 - 数据驱动，因材施教</title>
+    <style>
+      :root{
+        --bg: #f6fbff;
+        --accent: #2563eb;
+        --muted: #6b7280;
+        --card: #ffffff;
+        --max-width: 1120px;
+      }
+      *{box-sizing:border-box}
+      body{font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,\"PingFang SC\",\"Noto Sans CJK SC\",sans-serif;margin:0;color:#0f172a;background:var(--bg)}
+      .app{display:flex;min-height:100vh}
+      .sidebar{width:220px;background:linear-gradient(180deg,#fff,#fbfdff);border-right:1px solid #e6eef8;padding:28px}
+      .logo{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--accent);font-size:18px;margin-bottom:18px}
+      .nav{margin-top:8px}
+      .nav a{display:block;color:#111827;text-decoration:none;padding:10px 8px;border-radius:8px;margin-bottom:6px}
+      .nav a:hover{background:#eef6ff}
+      .main{flex:1;padding:40px;display:flex;justify-content:center}
+      .container{width:100%;max-width:var(--max-width)}
+
+      /* Hero */
+      .hero{display:flex;gap:32px;align-items:center;background:var(--card);padding:36px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+      .hero-left{flex:1}
+      .eyebrow{color:var(--muted);font-size:13px;margin-bottom:8px}
+      h1{font-size:34px;margin:6px 0 12px;line-height:1.15}
+      .lead{color:#334155;line-height:1.8;font-size:16px}
+      .cta{margin-top:18px;display:flex;gap:12px}
+      .btn{background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
+      .btn.secondary{background:transparent;color:var(--accent);border:1px solid rgba(37,99,235,0.12)}
+      .hero-right img{max-width:420px;border-radius:10px;display:block}
+
+      /* Cards */
+      .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+      .card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 14px rgba(15,23,42,0.04)}
+      .card h3{margin:0 0 8px;font-size:18px;color:#0f172a}
+      .card p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
+
+      /* Sections */
+      section{margin-top:28px}
+  .two-col{display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:flex-start;background:transparent}
+  .two-col .two-col-left{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 14px rgba(15,23,42,0.04)}
+  .two-col .two-col-right{display:flex;justify-content:center;align-items:flex-start;align-self:flex-start}
+  .two-col .two-col-right img{width:400px;max-width:100%;border-radius:8px;display:block;margin-top:0}
+  /* Support cases where markup uses .two-col-right without a .two-col wrapper */
+  .two-col-right{display:flex;justify-content:center;align-items:flex-start;align-self:flex-start}
+  .two-col-right img{width:400px;max-width:100%;border-radius:8px;display:block;margin-top:0}
+      .section-title{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+      .section-title h2{margin:0;font-size:20px}
+      .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+
+      /* FAQ */
+      .faq .q{background:var(--card);padding:14px;border-radius:8px;margin-bottom:10px}
+      .q h4{margin:0 0 6px}
+      .q p{margin:0;color:var(--muted);font-size:14px}
+
+      footer{margin-top:36px;color:var(--muted);font-size:13px;text-align:center}
+
+      /* Responsive */
+      @media (max-width:900px){
+        .hero{flex-direction:column}
+        .cards{grid-template-columns:repeat(1,1fr)}
+        .grid-2{grid-template-columns:1fr}
+        .sidebar{display:none}
+      }
+    </style>
   </head>
   <body>
-    <h1>Welcome to Tangest</h1>
-    <p>这是在 GitHub Pages 上托管的示例页面。</p>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="logo">堂测网</div>
+        <nav class="nav">
+          <a href="#">首页</a>
+          <a href="#services">堂测动态</a>
+          <a href="#system">相关报道</a>
+          <a href="#faq">帮助</a>
+        </nav>
+      </aside>
+      <main class="main">
+        <section class="hero">
+          <div class="hero-left">
+            <div class="eyebrow">数据驱动，因材施教</div>
+            <h1>一堂课，见证数据如何改变教学</h1>
+  <p>数据驱动，因材施教 —— 用一堂课，见证数据如何改变教学。</p>
+
+
+
+<p>堂测网以课堂测评与教学数据为核心，通过即时测评、可视化分析与智能反馈，帮助教师在每一堂课中做出更精准的教学决策，实现个性化教学与教学效果的持续提升。</p>
+
+
+
+<h3 class="wp-block-heading">一、堂测的核心价值</h3>
+
+
+
+<p>三大核心功能，让您的课堂教学更高效、更精准、更智能</p>
+
+
+
+<p>1、极速出题，告别繁琐</p>
+
+
+
+<p>支持图片、Latex公式、音频多媒体题目创建，满足不同科目老师需求；快速批量导入，轻松构建您的个性化云题库，APP端遥控Web展示，让堂测变得更高效。</p>
+
+
+
+<p>2、秒收答案，掌控全场</p>
+
+
+
+<p>独有的堂测二维码、批量扫码、远程缩放技术，让您无需走下讲台即可快速收集全班答案。立即呈现选项分布、正确率及每个学生的具体选择，保持课堂的连贯性。</p>
+
+
+
+<p>3、精准洞察，因材施教</p>
+
+
+
+<p>立即洞察“谁错了”、“错在哪”，让每一次讲解都有的放矢，真正实现基于数据的个性化教学。让教学干预有的放矢，因材施教。</p>
+
+
+
+<h3 class="wp-block-heading">二、一堂课，见证数据如何改变教学（流程示例）<br></h3>
+
+
+
+<p>1、课前 &#8211; 智能备课</p>
+
+
+
+<p>支持图、音、Latex公式的的练习题：堂测的选择题可以插入图片、音频以及数学、物理、化学等Latex公式，支持各类学科的在线堂测。</p>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="553" height="303" src="http://www.tangest.com/wp-content/uploads/2025/10/image.png" alt="" class="wp-image-131" srcset="http://www.tangest.com/wp-content/uploads/2025/10/image.png 553w, http://www.tangest.com/wp-content/uploads/2025/10/image-300x164.png 300w" sizes="(max-width: 553px) 100vw, 553px" /></figure>
+
+
+
+<p>2、课中 &#8211; 精准讲解</p>
+
+
+
+<p>一眼看穿&#8221;谁错了&#8221;以及&#8221;为什么错&#8221;：答题结束，报告即出。您能看到&#8217;选择B选项的5位同学是张三、李四&#8230;&#8217;，从而直接发起针对性提问：&#8217;李四，请你分享一下为什么选B？我们一起来分析这个思路。&#8217;让讲解从未如此精准。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="606" height="282" src="http://www.tangest.com/wp-content/uploads/2025/10/image-1.png" alt="" class="wp-image-132" srcset="http://www.tangest.com/wp-content/uploads/2025/10/image-1.png 606w, http://www.tangest.com/wp-content/uploads/2025/10/image-1-300x140.png 300w" sizes="(max-width: 606px) 100vw, 606px" /></figure>
+
+
+
+<p>3、课后 &#8211; 个性追踪</p>
+
+
+
+<p>从&#8221;班级平均分&#8221;到&#8221;个人知识图谱&#8221;：系统自动为每个学生生成个人知识掌握度报告，并对比历次测验表现。无论是个性化辅导还是家校沟通，您都有最坚实的数据支撑。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="613" height="334" src="http://www.tangest.com/wp-content/uploads/2025/10/image-2.png" alt="" class="wp-image-133" srcset="http://www.tangest.com/wp-content/uploads/2025/10/image-2.png 613w, http://www.tangest.com/wp-content/uploads/2025/10/image-2-300x163.png 300w" sizes="(max-width: 613px) 100vw, 613px" /></figure>
+
+
+
+<h3 class="wp-block-heading">三、堂测系统构成（模块化设计）</h3>
+
+
+
+<p>三大核心组件协同工作，为您打造最完整的课堂互动生态系统</p>
+
+
+
+<p>1、Web管理端</p>
+
+
+
+<p>在线课堂习题管理中心。Web端提供如下功能服务：创建和管理习题库，支持图文音公式；班级学生信息管理，分组设置；课堂播放小测题目，实时展示；深度学情分析报告，个性化建议创建和管理习题库，支持图文音公式。</p>
+
+
+
+<p>使用场景：课前备课、课堂展示、课后分析</p>
+
+
+
+<figure class="wp-block-image size-full is-resized"><img loading="lazy" decoding="async" width="568" height="426" src="http://www.tangest.com/wp-content/uploads/2025/10/image-3.png" alt="" class="wp-image-134" style="width:537px;height:auto" srcset="http://www.tangest.com/wp-content/uploads/2025/10/image-3.png 568w, http://www.tangest.com/wp-content/uploads/2025/10/image-3-300x225.png 300w" sizes="(max-width: 568px) 100vw, 568px" /></figure>
+
+
+
+<p>2、移动扫码端</p>
+
+
+
+<p>批量扫码快速收集分析。堂测APP能够：同步控制Web端播放进度；远程缩放扫码，站在讲台收集答案；离线扫码，有网时自动同步；实时查看答题统计和分布。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="534" height="395" src="http://www.tangest.com/wp-content/uploads/2025/10/image-4.png" alt="" class="wp-image-135" srcset="http://www.tangest.com/wp-content/uploads/2025/10/image-4.png 534w, http://www.tangest.com/wp-content/uploads/2025/10/image-4-300x222.png 300w" sizes="(max-width: 534px) 100vw, 534px" /></figure>
+
+
+
+<p>3、专属二维码</p>
+
+
+
+<p>学生专属答题卡片。自助下载打印，三种班级规格，最多支持128人；每张绑定唯一学号编号；四个方向对应A、B、C、D选项；扫码识别率100%。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="452" height="298" src="http://www.tangest.com/wp-content/uploads/2025/10/image-5.png" alt="" class="wp-image-136" srcset="http://www.tangest.com/wp-content/uploads/2025/10/image-5.png 452w, http://www.tangest.com/wp-content/uploads/2025/10/image-5-300x198.png 300w" sizes="(max-width: 452px) 100vw, 452px" /></figure>
+
+
+
+<h3 class="wp-block-heading">四、老师们最关心的问题，我们这样解决</h3>
+
+
+
+<ul class="wp-block-list">
+<li>&#8220;扫码会不会很慢、很麻烦？&#8221;<br>无需走下讲台，几秒收集完全班答案。堂测APP支持批量扫码和缩放扫码技术，您站在讲台即可一次性捕捉多个学生二维码。一个50人的班级，通常在4-5秒内即可完成全部收集，完全不影响课堂节奏。</li>
+</ul>
+
+
+
+<p></p>
+
+
+
+<ul class="wp-block-list">
+<li>&#8220;教室网络不稳定怎么办？&#8221;<br>无网环境，照样流畅测验。我们采用本地数据缓存技术。扫码、统计、分析全过程不受网络环境影响，数据结果立即呈现。同步至云端，安全无忧。</li>
+</ul>
+
+
+
+<p></p>
+
+
+
+<ul class="wp-block-list">
+<li>&#8220;数据能帮我真正定位问题吗？&#8221;<br>不止于正确率，更洞察错误根源。系统能精准定位到选择每一个错误选项的具体学生，让您不仅能讲&#8221;为什么对&#8221;，更能讲&#8221;为什么错&#8221;，实现真正的精准教学。</li>
+</ul>
+
+
+
+<p></p>
+
+
+
+<h3 class="wp-block-heading">六、典型应用场景（举例）</h3>
+
+
+
+<ul class="wp-block-list">
+<li>日常课堂小测：10-15 分钟快测实现单节课内诊断。</li>
+
+
+
+<li>单元/期中检测：批量组卷、统计学情并出具学情报告。</li>
+
+
+
+<li>教学研究：对比实验班与对照班的教学策略效果评估。</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading">七、一句话结尾（行动号召）</h3>
+
+
+
+<p>用一堂课，见证数据如何改变教学——立即试用堂测网，让教学更有依据，让每个学生都被看见。</p>
+
+
+
+<p><a href="https://www.tangest.cn">https://www.tangest.cn</a></p>
+
+          </div>
+          <div class="two-col-right">
+            <img src="http://www.tangest.com/wp-content/uploads/2025/10/%E6%8D%95%E8%8E%B744.png" alt="堂测示意图" width="600px" />
+          </div>
+        </section>
+
+  
+
+
+      </main>
+    </div>
+    <div>
+<section>
+<footer>
+          © 2025 堂测网 &nbsp;|&nbsp; 数据驱动，因材施教 &nbsp;•&nbsp; <a href="#contact" style="color:var(--accent);text-decoration:none">联系我们</a>
+</footer>
+</section>    
+    </div>
+
   </body>
 </html>
