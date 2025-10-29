@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>堂测网 - 数据驱动，因材施教</title>
+    <style>
+      :root{
+        --bg: #f6fbff;
+        --accent: #2563eb;
+        --muted: #6b7280;
+        --card: #ffffff;
+        --max-width: 1120px;
+      }
+      *{box-sizing:border-box}
+      body{font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,\"PingFang SC\",\"Noto Sans CJK SC\",sans-serif;margin:0;color:#0f172a;background:var(--bg)}
+      .app{display:flex;min-height:100vh}
+      .sidebar{width:220px;background:linear-gradient(180deg,#fff,#fbfdff);border-right:1px solid #e6eef8;padding:28px}
+      .logo{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--accent);font-size:18px;margin-bottom:18px}
+      .nav{margin-top:8px}
+      .nav a{display:block;color:#111827;text-decoration:none;padding:10px 8px;border-radius:8px;margin-bottom:6px}
+      .nav a:hover{background:#eef6ff}
+      .main{flex:1;padding:40px;display:flex;justify-content:center}
+      .container{width:100%;max-width:var(--max-width)}
+
+      /* Hero */
+      .hero{display:flex;gap:32px;align-items:center;background:var(--card);padding:36px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+      .hero-left{flex:1}
+      .eyebrow{color:var(--muted);font-size:13px;margin-bottom:8px}
+      h1{font-size:34px;margin:6px 0 12px;line-height:1.15}
+      .lead{color:#334155;line-height:1.8;font-size:16px}
+      .cta{margin-top:18px;display:flex;gap:12px}
+      .btn{background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
+      .btn.secondary{background:transparent;color:var(--accent);border:1px solid rgba(37,99,235,0.12)}
+      .hero-right img{max-width:420px;border-radius:10px;display:block}
+
+      /* Cards */
+      .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+      .card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 14px rgba(15,23,42,0.04)}
+      .card h3{margin:0 0 8px;font-size:18px;color:#0f172a}
+      .card p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
+
+      /* Sections */
+      section{margin-top:28px}
+  .two-col{display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:flex-start;background:transparent}
+  .two-col .two-col-left{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 14px rgba(15,23,42,0.04)}
+  .two-col .two-col-right{display:flex;justify-content:center;align-items:flex-start;align-self:flex-start}
+  .two-col .two-col-right img{width:400px;max-width:100%;border-radius:8px;display:block;margin-top:0}
+  /* Support cases where markup uses .two-col-right without a .two-col wrapper */
+  .two-col-right{display:flex;justify-content:center;align-items:flex-start;align-self:flex-start}
+  .two-col-right img{width:400px;max-width:100%;border-radius:8px;display:block;margin-top:0}
+      .section-title{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+      .section-title h2{margin:0;font-size:20px}
+      .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+
+      /* FAQ */
+      .faq .q{background:var(--card);padding:14px;border-radius:8px;margin-bottom:10px}
+      .q h4{margin:0 0 6px}
+      .q p{margin:0;color:var(--muted);font-size:14px}
+
+      footer{margin-top:36px;color:var(--muted);font-size:13px;text-align:center}
+
+      /* Responsive */
+      @media (max-width:900px){
+        .hero{flex-direction:column}
+        .cards{grid-template-columns:repeat(1,1fr)}
+        .grid-2{grid-template-columns:1fr}
+        .sidebar{display:none}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="logo">堂测网</div>
+        <nav class="nav">
+          <a href="/tangest/index.html">首页</a>
+          <a href="/tangest/blogging.html">堂测动态</a>
+          <a href="/tangest/servies.html">相关报道</a>
+          <a href="/tangest/faq.html">帮助</a>
+        </nav>
+      </aside>
+      <main class="main">
+        <section class="hero">
+          <div class="hero-left">
+            <div class="eyebrow"><a href="/index.html">首页</a>  -  <a href="/servies.html">相关报道</a> </div>
+            <h1>别再让课堂小测 “白费力”！一张纸 + 一个 APP，帮你把教学效率提 3 倍</h1>
+<p>周三下午第三节数学课，李老师讲完 “一元二次方程求根公式”，抬眼扫过台下 42 个学生 —— 有人盯着黑板若有所思，有人低头在草稿本上写写画画，还有两个后排的孩子偷偷摸出了橡皮玩。她心里犯了嘀咕：例题跟着算都对，可真到独立解题时，他们到底会不会？</p>
+
+
+
+<p>李老师习惯性地拿出提前印好的 3 道题，让学生写在练习本上。10 分钟后收上来批改，20 分钟过去，手里的红笔才划到第 15 本；等她算出 “全班 13 人错了第 2 题”，准备讲解时，下课铃已经响了。更让她无奈的是，她只知道 “有 13 人错了”，却不知道这 13 人是没记住公式，还是算错了符号 —— 只能下次课再 “笼统地补一遍”。</p>
+
+
+
+<p>这样的场景，恐怕每个中小学老师都不陌生。课堂小测明明是教学里最 “刚需” 的环节，却常常因为 “耗时、滞后、模糊”，变成了老师的 “负担”。直到最近试了堂测 TangEST，李老师才发现：原来小测可以不用改卷子，不用等结果，甚至站在讲台就能知道 “谁错了、错在哪”。</p>
+
+
+
+<h2 class="wp-block-heading">先说说：课堂小测到底有多重要？</h2>
+
+
+
+<p>很多老师觉得 “小测耽误上课时间”，宁愿多讲两道例题，也不愿花 10 分钟让学生做题。但其实，小测才是让教学 “不做无用功” 的关键 —— 它就像医生的 “听诊器”，能帮你及时摸清学生的 “学情脉搏”。</p>
+
+
+
+<p>首先，小测是 “即时诊断” 的利器。老师讲完一个知识点，自我感觉 “讲得很清楚”，但学生到底懂没懂，只有做题才知道。比如讲 “浮力计算”，你以为学生都掌握了 “F 浮 =ρ 液 gV 排”，但小测一道 “空心铁块漂浮” 的题，就能看出谁忽略了 “V 排≠V 物”。这种 “当场发现问题”，比等单元考才暴露问题，要高效得多 —— 毕竟，当天的漏洞当天补，比一周后再 “返工” 容易太多。</p>
+
+
+
+<p>其次，小测能帮学生 “对抗遗忘”。根据艾宾浩斯遗忘曲线，新学的知识 1 小时后会遗忘 50% 以上。课堂上刚听完的内容，学生可能 “当时懂了”，但过一会儿就模糊了。小测的过程，其实是让学生 “主动回忆、快速应用” 的过程 —— 相当于给刚学的知识 “打了一针巩固剂”，比单纯 “重复听讲” 效果好 3 倍。</p>
+
+
+
+<p>还有一点很重要：小测能 “调动课堂注意力”。只要学生知道 “这节课会有小测”，他们上课就不敢走神 —— 毕竟，没人想在小测里 “露怯”。有个语文老师做过实验：没小测的课，后排有 30% 的学生容易走神；加了 10 分钟小测后，走神率降到了 5%。而且小测的 “即时反馈”，还能给学生成就感 —— 比如做对的学生，会更有动力听接下来的内容；做错的学生，也会更专注听老师讲解自己的错误。</p>
+
+
+
+<p>最后，小测是 “精准教学” 的基础。很多老师备课只看 “教参要求”，上课按 “预设节奏” 走，却忽略了 “学生的实际水平”。而小测的数据，能帮你摸清 “全班的薄弱点”：比如全班 80% 都错了第 3 题，那说明你讲这个知识点时 “方法不对”，需要换个思路再讲；如果只有 2 个学生错了，那只要课后单独辅导就行 —— 不用 “全班陪练”，浪费大多数人的时间。</p>
+
+
+
+<h2 class="wp-block-heading">可传统小测，为啥总让老师 “头疼”？</h2>
+
+
+
+<p>道理都懂，但真正做起来，传统小测的 “缺憾” 实在太明显 —— 几乎每个老师都被这些问题困扰过：</p>
+
+
+
+<p>第一个痛点是 “批改耗时”。一个老师带 3 个班，每个班 40 人，小测 5 道题，哪怕每本卷子改 1 分钟，也要 120 分钟 —— 相当于两个小时的课后时间，全耗在改小测上。有个班主任吐槽：“每天下班先改小测，改完就 8 点多了，连陪孩子吃饭的时间都没有。” 更麻烦的是，遇到学生字迹潦草，还要猜 “这写的是 A 还是 B”，效率更低。</p>
+
+
+
+<p>第二个痛点是 “反馈滞后”。传统小测要 “收卷→批改→统计→讲解”，一套流程下来，最少要等到下节课，甚至第二天。等老师拿着 “错误率” 去讲解时，学生早就忘了 “当时为什么这么选”—— 讲解效果大打折扣。比如周一的小测，周三才讲，学生可能只会说 “哦，当时我写错了”，却想不起来 “为什么错”，下次遇到类似题，还是会错。</p>
+
+
+
+<p>第三个痛点是 “数据模糊”。传统小测最多能算出 “全班平均分”“某题正确率”，却不知道 “谁错了”“错在哪”。比如某题正确率 60%，你只知道有 40% 的学生错了，但不知道这 40% 是 “共性问题” 还是 “个别失误”；更不知道 “张三错了第 2 题，李四也错了第 2 题，但两人错的原因不一样”。这种模糊的数据，根本帮不了你 “精准辅导”，最后还是只能 “全班统一讲一遍”。</p>
+
+
+
+<p>第四个痛点是 “组织繁琐”。要印卷子、发卷子、收卷子，光是这些环节，就要浪费 5-10 分钟。如果遇到 “卷子印少了”“学生弄丢了”，还要临时补，打乱课堂节奏。有个数学老师说：“有时候想搞个 5 分钟快测，结果光发卷子就用了 3 分钟，测完刚讲两道题就下课了，还不如不讲。”</p>
+
+
+
+<h2 class="wp-block-heading">现有信息化方案，为啥不适合 K12？</h2>
+
+
+
+<p>为了解决传统小测的问题，市面上也有不少 “信息化工具”，比如让学生用平板或手机答题 —— 但这些方案，在普通中小学里根本 “水土不服”。</p>
+
+
+
+<p>首先是 “设备成本高”。一套学生平板少则几百，多则上千，一个班 40 人就要两三万，很多普通学校根本承担不起；就算学校买了，后续的维护、充电、更新，也是一笔不小的开销。农村学校更不用说，连网络都不稳定，平板根本用不了。</p>
+
+
+
+<p>其次是 “管理难度大”。学生拿着平板或手机，很容易偷偷玩游戏、刷视频 —— 你在前面讲题，他在下面刷抖音，反而影响课堂纪律。有个初中老师试过用手机答题，结果发现有学生趁扫码的功夫，偷偷给同学发答案；还有学生把手机藏在桌肚里玩，一节课下来，题没答几道，游戏玩了不少。</p>
+
+
+
+<p>最后是 “不符合规定”。现在很多地方明确要求 “中小学课堂不得使用手机”，家长也反对孩子上课用电子设备 —— 怕伤眼睛，更怕分心。你要是强行用手机或平板做小测，不仅会被家长投诉，还可能违反学校规定，吃力不讨好。</p>
+
+
+
+<p>说白了，这些信息化方案，看似 “先进”，却没考虑到 K12 课堂的 “实际情况”—— 大多数学校没有足够的经费，大多数学生没有自控力，大多数家长不放心电子设备。所以，这些方案最后要么 “闲置在仓库”，要么 “用了几次就放弃”。</p>
+
+
+
+<h2 class="wp-block-heading">堂测 TangEST：一张纸 + 一个 APP，解决所有痛点</h2>
+
+
+
+<p>直到<a href="https://www.tangest.cn">堂测 TangEST</a> 出现，才真正 “踩中” 了 K12 课堂的需求 —— 它没搞复杂的电子设备，只用 “一张纸质二维码卡片” 和 “一个老师端 APP”，就把小测从 “低效耗时” 变成了 “秒级反馈”。</p>
+
+
+
+<p>它的核心设计特别简单：给每个学生发一张 “专属二维码卡片”，卡片上绑定了唯一的学号，四个方向分别对应 A、B、C、D 四个选项。学生答题时，不用写、不用画，只要把卡片翻到自己选的选项方向（比如选 A 就把 A 面朝上），举起来就行。</p>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="452" height="298" src="http://www.tangest.com/wp-content/uploads/2025/10/image-5.png" alt="" class="wp-image-136" srcset="http://www.tangest.com/wp-content/uploads/2025/10/image-5.png 452w, http://www.tangest.com/wp-content/uploads/2025/10/image-5-300x198.png 300w" sizes="(max-width: 452px) 100vw, 452px" /></figure>
+
+
+
+<p>老师呢？只要打开 “<a href="https://www.tangest.cn">堂测 APP</a>”，点击 “批量扫码”，站在讲台上对着学生举的卡片一扫 ——50 人的班级，4-5 秒就能收完所有答案，比走下去收卷子快 10 倍。而且不用担心网络，就算教室没网，扫码、统计、看结果，全程都能用；等有网了，数据会自动同步到云端，安全不丢失。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="534" height="395" src="http://www.tangest.com/wp-content/uploads/2025/10/image-4.png" alt="" class="wp-image-135" srcset="http://www.tangest.com/wp-content/uploads/2025/10/image-4.png 534w, http://www.tangest.com/wp-content/uploads/2025/10/image-4-300x222.png 300w" sizes="(max-width: 534px) 100vw, 534px" /></figure>
+
+
+
+<p>这个设计，完美解决了 K12 的痛点：不用学生买平板、不用带手机，一张纸就能答题，家长放心，学校支持；老师不用改卷子、不用等结果，扫码就能看数据，省时又省力。</p>
+
+
+
+<p>有个农村学校的老师说：“我们教室网络不好，之前用平板答题，一断网就卡住；现在用堂测，没网也能测，扫完马上知道谁错了，讲解的时候特别有针对性。” 还有个小学老师说：“低年级学生不会用手机，用二维码卡片刚好，翻一翻就行，还能锻炼他们的反应力。”</p>
+
+
+
+<h2 class="wp-block-heading">好的工具，应该帮老师 “减负”，而不是 “增负”</h2>
+
+
+
+<p>其实每个老师都想把课教好，都想关注到每个学生，但现实是 “时间不够、精力有限”—— 传统小测消耗了太多时间，让老师没时间去研究教学方法，没时间去关注每个学生的需求。</p>
+
+
+
+<p>而<a href="https://www.tangest.cn">堂测 TangEST</a>，恰恰是用最简单的方式，帮老师 “省出时间”—— 不用改卷子，不用等结果，不用猜 “学生懂没懂”，把省下来的时间，用在更重要的 “精准教学” 和 “个性化辅导” 上。</p>
+
+
+
+<p>现在，已经有 200 多所学校的老师用<a href="https://www.tangest.cn">堂测 TangEST</a> 改变了教学：数学老师王老师说 “现在改小测不用加班了，课堂上就能知道谁没懂，讲解的时候特别有针对性”；班主任刘老师说 “和家长沟通时，拿着个人知识图谱，比说‘孩子有点弱’管用多了，家长也更配合”；农村学校的张老师说 “没网也能用，解决了我们学校的大问题，现在每周能多搞 2 次小测，学生的进步特别明显”。</p>
+
+
+
+<p>如果你也被传统小测的 “耗时、滞后、模糊” 困扰，如果你也想让教学更有依据，让每个学生都被看见，不妨试试<a href="https://www.tangest.cn">堂测 TangEST</a>—— 不用买设备，不用改卷子，只用一张纸 + 一个 APP，就能让课堂小测 “变高效”，让你的教学 “更精准”。</p>
+
+
+
+<p>毕竟，我们当老师的，想要的从来不是复杂的技术，而是一个能帮我们 “把课教好” 的工具 —— 而<a href="https://www.tangest.cn">堂测 TangEST</a>，就是这样的工具。编辑分享</p>
+
+          </div>
+          <div class="two-col-right">
+            <img src="../imgs/slogan.png" alt="堂测示意图" width="600px" />
+          </div>
+        </section>
+
+  
+
+
+      </main>
+    </div>
+    <div>
+<section>
+<footer>
+          © 2025 堂测网 &nbsp;|&nbsp; 数据驱动，因材施教 &nbsp;•&nbsp; <a href="#contact" style="color:var(--accent);text-decoration:none">联系我们</a>
+</footer>
+</section>    
+    </div>
+
+  </body>
+</html>
