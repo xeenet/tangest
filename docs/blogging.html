@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>堂测网更新：25年11月28日 - 堂测网</title>
+    <style>
+      :root{--bg:#f6fbff;--accent:#2563eb;--muted:#6b7280;--card:#ffffff;--max-width:1120px}
+      *{box-sizing:border-box}
+      body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Noto Sans CJK SC",sans-serif;margin:0;color:#0f172a;background:var(--bg)}
+      .app{display:flex;min-height:100vh}
+      .sidebar{width:220px;background:linear-gradient(180deg,#fff,#fbfdff);border-right:1px solid #e6eef8;padding:28px}
+      .logo{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--accent);font-size:18px;margin-bottom:18px}
+      .nav{margin-top:8px}
+      .nav a{display:block;color:#111827;text-decoration:none;padding:10px 8px;border-radius:8px;margin-bottom:6px}
+      .nav a:hover{background:#eef6ff}
+      .main{flex:1;padding:40px;display:flex;justify-content:center}
+      .container{width:100%;max-width:var(--max-width)}
+      .hero{display:flex;gap:32px;align-items:flex-start;background:var(--card);padding:36px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+      .hero-left{flex:1}
+      .eyebrow{color:var(--muted);font-size:13px;margin-bottom:8px}
+      h1{font-size:34px;margin:6px 0 12px;line-height:1.15}
+      .lead{color:#334155;line-height:1.8;font-size:16px}
+      .two-col{display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:flex-start;background:transparent}
+      .two-col .two-col-right img{width:400px;max-width:100%;border-radius:8px;display:block;margin-top:0}
+      .section{margin-top:20px}
+      .section h2{margin:0 0 8px;font-size:18px}
+      .section p, .section li{color:var(--muted);line-height:1.8}
+      footer{margin-top:36px;color:var(--muted);font-size:13px;text-align:center}
+      @media (max-width:900px){.hero{flex-direction:column}.sidebar{display:none}}
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="logo">堂测网</div>
+        <nav class="nav">
+          <a href="/tangest/index.html">首页</a>
+          <a href="/tangest/blogging.html">堂测动态</a>
+          <a href="/tangest/servies.html">相关报道</a>
+          <a href="/tangest/faq.html">帮助</a>
+        </nav>
+      </aside>
+      <main class="main">
+        <div class="container">
+        <section class="hero">
+          <div class="hero-left">
+            <div class="eyebrow"><a href="/index.html">首页</a>  -  <a href="/servies.html">相关报道</a>  -  <span>11 月 28, 2025</span></div>
+            <h1>堂测网更新：25年11月28日</h1>
+
+            <p class="lead">自上次更新以来，经过了10天，昨天上线了一些列的更新，说明如下。</p>
+
+            <div class="section">
+              <h2>1、iOS 版堂测 APP 开发完毕</h2>
+              <p>已经可以内测。外部测试审核在进行中，快的话两三天后可以进行外部测试。</p>
+            </div>
+
+            <div class="section">
+              <h2>2、安卓版本更新</h2>
+              <ul>
+                <li>解决了多账号下，班级筛选列表班级数据无法更新的问题。</li>
+                <li>增加了对题干、选项部分 LaTeX 语法的支持，现在题干和选项都能显示各类公式。</li>
+                <li>解决了选项内容较多情况下的分行问题。</li>
+                <li>支持多线路选择，新增可访问线路，可按具体网络情况切换。</li>
+              </ul>
+            </div>
+
+            <div class="section">
+              <h2>3、Web 端更新</h2>
+              <ul>
+                <li>支持多线路选择（新增国内线路以应对部分学校网络封禁）。</li>
+                <li>习题播放页面：优化选项统计与学生列表显示，修复再次扫描提交后数据更新不及时的问题。</li>
+                <li>优化诊断分析报告中的题号显示，调整中止生成报告的流程。</li>
+              </ul>
+            </div>
+
+            <hr />
+
+            <h1>堂测更新：1103-1117</h1>
+            <p class="lead">我们在本期更新中，着重提升了 AI 题集创建体验、题集播放的可读性与流畅度。</p>
+
+            <div class="section">
+              <h2>亮点功能</h2>
+              <h3>实时 AI 辅助创建题集（看得见的“思路”）</h3>
+              <ul>
+                <li>生成过程实时呈现在右侧面板，可边看边取消或等待完成。</li>
+                <li>生成结束后不会自动加入题库，系统显示“导入”按钮，确认后再保存到题集，便于把关与修订。</li>
+              </ul>
+
+              <h3>题干和选项支持 LaTeX 语法</h3>
+              <p>题干和选项在习题集播放时均可渲染 LaTeX 公式，提高阅读体验。</p>
+
+              <h3>提供小测学情诊断分析报告</h3>
+              <p>使用 AI，从四个维度基于课堂小测数据生成详细学情诊断；老师可在模板上加入自定义提示词，使报告更贴合教学需求。</p>
+
+              <h3>题集播放更顺眼更稳定</h3>
+              <ul>
+                <li>页面加载加入骨架屏，避免短暂空白或闪烁。</li>
+                <li>公式渲染优化：年度/长期会员能看到渲染后的数学公式，普通与月度用户仍可查看题目与媒体内容。</li>
+              </ul>
+            </div>
+
+            <hr />
+
+            <h1>堂测更新1103日志（10 月 28 日 – 11 月 3 日）</h1>
+            <div class="section">
+              <h2>题集管理</h2>
+              <ol>
+                <li>新增 AI 自动创建选择题功能：使用 DeepSeek 接口，老师可批量创建符合年级、知识点与难度要求的题目并自动导入题集。</li>
+                <li>习题集播放新增主动选项显示：老师可在 APP 端提交数据后选择是否展示汇总信息。</li>
+                <li>加载效率优化：优化成绩与分析加载逻辑，减少服务端压力并加快展示速度。</li>
+                <li>挂载 Coze 的客服智能体，提升在线客服文本响应能力。</li>
+                <li>优化习题包封面问题，改为从默认封面中随机选择，保证封面一致性。</li>
+                <li>创建班级时严格限制学号范围为 1-128，避免错误学号引发的问题。</li>
+                <li>若干 UI 优化与修复。</li>
+              </ol>
+            </div>
+
+          </div>
+          <div class="two-col-right">
+            <img src="imgs/slogan.png" alt="堂测示意图" width="400px" />
+          </div>
+        </section>
+        </div>
+      </main>
+    </div>
+    <div>
+<section>
+<footer>
+          © 2025 堂测网 &nbsp;|&nbsp; 数据驱动，因材施教 &nbsp;•&nbsp; <a href="#contact" style="color:var(--accent);text-decoration:none">联系我们</a>
+</footer>
+</section>
+    </div>
+
+  </body>
+</html>
