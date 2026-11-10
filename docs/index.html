@@ -1,99 +1,111 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>堂测网 - 数据驱动，因材施教</title>
-    <style>
-      :root{
-        --bg: #f6fbff;
-        --accent: #2563eb;
-        --muted: #6b7280;
-        --card: #ffffff;
-        --max-width: 1120px;
-      }
-      *{box-sizing:border-box}
-      body{font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,\"PingFang SC\",\"Noto Sans CJK SC\",sans-serif;margin:0;color:#0f172a;background:var(--bg)}
-      .app{display:flex;min-height:100vh}
-      .sidebar{width:220px;background:linear-gradient(180deg,#fff,#fbfdff);border-right:1px solid #e6eef8;padding:28px}
-      .logo{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--accent);font-size:18px;margin-bottom:18px}
-      .nav{margin-top:8px}
-      .nav a{display:block;color:#111827;text-decoration:none;padding:10px 8px;border-radius:8px;margin-bottom:6px}
-      .nav a:hover{background:#eef6ff}
-      .main{flex:1;padding:40px;display:flex;justify-content:center}
-      .container{width:100%;max-width:var(--max-width)}
-
-      /* Hero */
-      .hero{display:flex;gap:32px;align-items:center;background:var(--card);padding:36px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
-      .hero-left{flex:1}
-      .eyebrow{color:var(--muted);font-size:13px;margin-bottom:8px}
-      h1{font-size:34px;margin:6px 0 12px;line-height:1.15}
-      .lead{color:#334155;line-height:1.8;font-size:16px}
-      .cta{margin-top:18px;display:flex;gap:12px}
-      .btn{background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
-      .btn.secondary{background:transparent;color:var(--accent);border:1px solid rgba(37,99,235,0.12)}
-      .hero-right img{max-width:420px;border-radius:10px;display:block}
-
-      /* Cards */
-      .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
-      .card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 14px rgba(15,23,42,0.04)}
-      .card h3{margin:0 0 8px;font-size:18px;color:#0f172a}
-      .card p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
-
-      /* Sections */
-      section{margin-top:28px}
-  .two-col{display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:flex-start;background:transparent}
-  .two-col .two-col-left{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 14px rgba(15,23,42,0.04)}
-  .two-col .two-col-right{display:flex;justify-content:center;align-items:flex-start;align-self:flex-start}
-  .two-col .two-col-right img{width:400px;max-width:100%;border-radius:8px;display:block;margin-top:0}
-  /* Support cases where markup uses .two-col-right without a .two-col wrapper */
-  .two-col-right{display:flex;justify-content:center;align-items:flex-start;align-self:flex-start}
-  .two-col-right img{width:400px;max-width:100%;border-radius:8px;display:block;margin-top:0}
-      .section-title{display:flex;align-items:center;gap:14px;margin-bottom:12px}
-      .section-title h2{margin:0;font-size:20px}
-      .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-
-      /* FAQ */
-      .faq .q{background:var(--card);padding:14px;border-radius:8px;margin-bottom:10px}
-      .q h4{margin:0 0 6px}
-      .q p{margin:0;color:var(--muted);font-size:14px}
-
-      footer{margin-top:36px;color:var(--muted);font-size:13px;text-align:center}
-
-      /* Responsive */
-      @media (max-width:900px){
-        .hero{flex-direction:column}
-        .cards{grid-template-columns:repeat(1,1fr)}
-        .grid-2{grid-template-columns:1fr}
-        .sidebar{display:none}
-      }
-    </style>
-  </head>
-  <body>
-    <div class="app">
-      <aside class="sidebar">
-        <div class="logo"><a href="https://www.tangest.cn">堂测</a>网</div>
-        <nav class="nav">
-          <a href="/tangest/index.html">首页</a>
-          <a href="/tangest/blogging.html">堂测动态</a>
-          <a href="/tangest/servies.html">相关报道</a>
-          <a href="/tangest/faq.html">帮助</a>
-        </nav>
-      </aside>
-      <main class="main">
-        <section class="hero">
-          <div class="hero-left">
-            <div class="eyebrow">数据驱动，因材施教</div>
-            <h1>一堂课，见证数据如何改变教学</h1>
-  <p>数据驱动，因材施教 —— 用一堂课，见证数据如何改变教学。</p>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>堂测网 - 数据驱动，因材施教</title>
+<meta name="description" content="堂测网以课堂测评与教学数据为核心，通过即时测评、可视化分析与智能反馈，帮助教师在每一堂课中做出更精准的教学决策。">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="堂测网">
+<meta property="og:title" content="堂测网 - 数据驱动，因材施教">
+<meta property="og:description" content="堂测网以课堂测评与教学数据为核心，通过即时测评、可视化分析与智能反馈，帮助教师在每一堂课中做出更精准的教学决策。">
+<meta property="og:url" content="https://xeenet.github.io/tangest/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="堂测网 - 数据驱动，因材施教">
+<meta name="twitter:description" content="堂测网以课堂测评与教学数据为核心，通过即时测评、可视化分析与智能反馈，帮助教师在每一堂课中做出更精准的教学决策。">
+<link rel="canonical" href="https://xeenet.github.io/tangest/">
+<link rel="stylesheet" href="assets/site.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"堂测网","url":"https://xeenet.github.io/tangest/"},{"@type":"WebSite","name":"堂测网","url":"https://xeenet.github.io/tangest/"}]}
+</script>
+</head>
+<body>
+<header class="topnav"><div class="topnav-inner">
+<a class="logo" href="index.html">堂测<em>网</em></a>
+<nav>
+<a href="index.html" class="active">首页</a>
+<a href="index.html#articles">文章</a>
+<a href="blogging.html">堂测动态</a>
+<a href="servies.html">相关报道</a>
+<a href="faq.html">帮助</a>
+</nav>
+</div></header>
+<main class="main">
+<section class="hero">
+<div class="eyebrow">数据驱动，因材施教</div>
+<h1>一堂课，见证数据如何改变教学</h1>
+<p>数据驱动，因材施教 —— 用一堂课，见证数据如何改变教学。</p>
 
 
 
 <p><a href="https://www.tangest.cn">堂测</a>网以课堂测评与教学数据为核心，通过即时测评、可视化分析与智能反馈，帮助教师在每一堂课中做出更精准的教学决策，实现个性化教学与教学效果的持续提升。</p>
-
-
-
-<h3 class="wp-block-heading">一、<a href="https://www.tangest.cn">堂测</a>的核心价值</h3>
+<div class="cta"><a class="btn" href="#articles">浏览文章</a><a class="btn ghost" href="https://www.tangest.cn">访问堂测官网</a></div>
+<p><img src="imgs/slogan.png" alt="堂测示意图"></p>
+</section>
+<section id="articles">
+<div class="section-head"><h2>文章</h2><span>全部 57 篇 · 按发布日期倒序</span></div>
+<div class="cards">
+<article class="card"><time datetime="2026-11-10">2026-11-10</time><h3><a href="gongkaike-ai-jingfei.html">学校要求公开课必须有 AI，又不给工具经费</a></h3><p>学校要求公开课必须有 AI，又不给工具经费：先问清要谁用、给什么条件，再只设一个 AI 环节，让学生参与判断和修正，而不是看老师表演。</p><a class="more" href="gongkaike-ai-jingfei.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2026-11-10">2026-11-10</time><h3><a href="ai-zhuizong-yingwen-2026-11-02-08.html">教育AI追踪·英文世界：谷歌定规矩，北欧要说法，证据还在路上</a></h3><p>上周欧美教育AI的关键词是选择与证据：谷歌把学校搜索与AI开关绑在一起，迫使学校逐年级做决定；北欧师生要求把规则写清楚；而AI到底帮了学习多…</p><a class="more" href="ai-zhuizong-yingwen-2026-11-02-08.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2026-11-10">2026-11-10</time><h3><a href="ai-zhuizong-zhongwen-2026-11-02-08.html">教育AI追踪·中文世界：红线、培训与课堂，三件事同时落地</a></h3><p>上周中文世界教育AI的关键词是划界与补课：北京发布2026版实施导引，教师侧《指引》的三条红线同周被重提；教师AI培训的讨论从“有没有”转到…</p><a class="more" href="ai-zhuizong-zhongwen-2026-11-02-08.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2026-11-10">2026-11-10</time><h3><a href="zuoye-jiao-guocheng.html">作业别只交成品，让学生交过程：防 AI 空转的两样东西</a></h3><p>作业只收成品，老师就只能一晚上查 AI，心里还没底。改法是先收两样过程材料留痕，第二天抽一道同类题当场讲思路：从猜学生做没做，变成看学生怎么…</p><a class="more" href="zuoye-jiao-guocheng.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2026-11-09">2026-11-09</time><h3><a href="ai-pingyu-xian-bu-yi-ju.html">AI 写评语太空？先补一句手写表现再批量</a></h3><p>期中评语季，AI 写的评语一眼就被认出是套话。先分一分：有具体表现的先补一句手写表现再批量，常规的直接批量，跑完再挑一遍只留贴着孩子原文说的…</p><a class="more" href="ai-pingyu-xian-bu-yi-ju.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2026-11-09">2026-11-09</time><h3><a href="taiwe%e6%95%99%e5%ad%a6skill%e7%b3%bb%e5%88%97%ef%bc%9a%e4%bd%9c%e4%b8%9a-%e8%af%95%e5%8d%b7%e5%ae%a2%e8%a7%82%e9%a2%98%e8%87%aa%e5%8a%a8%e6%89%b9%e6%94%b9.html">TAIWE教学Skill系列：作业/试卷客观题自动批改</a></h3><p></p><a class="more" href="taiwe%e6%95%99%e5%ad%a6skill%e7%b3%bb%e5%88%97%ef%bc%9a%e4%bd%9c%e4%b8%9a-%e8%af%95%e5%8d%b7%e5%ae%a2%e8%a7%82%e9%a2%98%e8%87%aa%e5%8a%a8%e6%89%b9%e6%94%b9.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2026-11-09">2026-11-09</time><h3><a href="ai-empowered-public-lesson-practices.html">公开课AI赋能怎么做？从评审要求讲起：备课、课件、互动、评价、复盘28个做法</a></h3><p>公开课AI赋能怎么做？从评审要求讲起，按备课、课件、课堂互动、评价反馈、复盘五环，给出28个能直接用的做法，帮老师把AI真正融进教学设计，而…</p><a class="more" href="ai-empowered-public-lesson-practices.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2026-11-06">2026-11-06</time><h3><a href="taiwe-first-project.html">TAIWE实操：安装、注册、创建项目，开始你的第一个教学项目</a></h3><p>TAIWE 实操教程：下载安装、注册登录、创建项目、让 AI 助手生成内容、检查与导出，一步步完成你的第一个教学项目，含高二物理《欧姆定律》…</p><a class="more" href="taiwe-first-project.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2026-11-06">2026-11-06</time><h3><a href="taiwe-overview.html">TAIWE是什么？专为教师日常工作开发的桌面AI助手概览</a></h3><p>TAIWE 是专为国内教师日常工作开发的桌面 AI 助手，以项目管理备课、课件、学情与日常办公，提供办公文档与 Markdown 互转、OC…</p><a class="more" href="taiwe-overview.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2026-11-06">2026-11-06</time><h3><a href="taiwe-project-management.html">老师日常工作怎么用项目方式管起来：TAIWE 项目管理介绍</a></h3><p>回头看这套管法：项目管理面板管进出，18 张类型卡管分工，8 个业务目录管归位，project.json 和 project.md 管 AI…</p><a class="more" href="taiwe-project-management.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2026-11-06">2026-11-06</time><h3><a href="ai-four-work-mechanisms.html">AI软件是怎么干活的？先分清任务、bot团队、项目、流程四种工作机制</a></h3><p>AI 软件组织工作分四种机制：任务为中心、智能体为中心（以一支 bot 团队为中心）、项目为中心、流程为中心。机制决定 AI 怎么接活、怎么…</p><a class="more" href="ai-four-work-mechanisms.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2026-11-06">2026-11-06</time><h3><a href="student-data-desensitization.html">学生数据脱敏：AI 分析学生数据前，先脱敏再提交（三步做法）</a></h3><p>AI 分析学生数据，先脱敏，再提交。数据脱敏是把可识别个人信息删除或替换成不可识别的数据，确保 AI 分析学生数据的合规性。视频时长 02:…</p><a class="more" href="student-data-desensitization.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2026-10-20">2026-10-20</time><h3><a href="taiwe%e6%95%99%e5%b8%88%e5%8a%a9%e6%89%8b-vs-workbuddy%e6%95%99%e8%82%b2%e7%89%88%ef%bc%9a%e5%93%aa%e4%b8%aa%e6%9b%b4%e9%80%82%e5%90%88%e8%80%81%e5%b8%88%ef%bc%9f.html">TAIWE教师助手 VS WorkBuddy教育版：哪个更适合老师？</a></h3><p></p><a class="more" href="taiwe%e6%95%99%e5%b8%88%e5%8a%a9%e6%89%8b-vs-workbuddy%e6%95%99%e8%82%b2%e7%89%88%ef%bc%9a%e5%93%aa%e4%b8%aa%e6%9b%b4%e9%80%82%e5%90%88%e8%80%81%e5%b8%88%ef%bc%9f.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2026-10-19">2026-10-19</time><h3><a href="%e6%95%99%e5%b8%88ai%e7%b4%a0%e5%85%bb%e4%b9%8b%e4%ba%8c%ef%bc%9a%e5%bf%ab%e9%80%9f%e4%ba%86%e8%a7%a3ai%e6%97%b6%e4%bb%a3%e7%9a%84%e9%80%9a%e7%94%a8%e6%a0%bc%e5%bc%8fmarkdown%ef%bc%8c%e5%ad%a6.html">教师AI素养之二：快速了解AI时代的通用格式Markdown，学习免费工具TAIWE书写编辑md文档</a></h3><p>本文是“教师AI素养”系列的第 2 集。读完你将知道： Markdown 是什么，以及一句口诀记住常用符号 它比 Word、PDF、HTML…</p><a class="more" href="%e6%95%99%e5%b8%88ai%e7%b4%a0%e5%85%bb%e4%b9%8b%e4%ba%8c%ef%bc%9a%e5%bf%ab%e9%80%9f%e4%ba%86%e8%a7%a3ai%e6%97%b6%e4%bb%a3%e7%9a%84%e9%80%9a%e7%94%a8%e6%a0%bc%e5%bc%8fmarkdown%ef%bc%8c%e5%ad%a6.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2026-10-19">2026-10-19</time><h3><a href="%e6%95%99%e5%b8%88ai%e7%b4%a0%e5%85%bb%e7%b3%bb%e5%88%97%ef%bc%9a%e4%bb%a5%e9%a1%b9%e7%9b%ae%e6%96%b9%e5%bc%8f%e7%ae%a1%e7%90%86%e6%95%99%e5%b8%88%e6%97%a5%e5%b8%b8%e5%b7%a5%e4%bd%9c%ef%bc%8c%e8%ae%a9.html">教师AI素养系列：以项目方式管理教师日常工作，让AI真正懂教学</a></h3><p>教师AI助教TAIWE借鉴VS Code工作区，把学期教学备课、教研、班主任工作、精品课设计变成可配置项目，让AI读取课标、学情与教学风格，…</p><a class="more" href="%e6%95%99%e5%b8%88ai%e7%b4%a0%e5%85%bb%e7%b3%bb%e5%88%97%ef%bc%9a%e4%bb%a5%e9%a1%b9%e7%9b%ae%e6%96%b9%e5%bc%8f%e7%ae%a1%e7%90%86%e6%95%99%e5%b8%88%e6%97%a5%e5%b8%b8%e5%b7%a5%e4%bd%9c%ef%bc%8c%e8%ae%a9.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2026-10-12">2026-10-12</time><h3><a href="%e6%95%99%e5%b8%88%e6%97%a5%e5%b8%b8%e5%b7%a5%e4%bd%9c%e4%b8%80%e7%ab%99%e5%bc%8f%e5%ae%8c%e6%88%90%ef%bc%8c%e4%b8%93%e4%b8%ba%e6%95%99%e5%b8%88%e6%9c%8d%e5%8a%a1%e7%9a%84%e6%a1%8c%e9%9d%a2ai%e5%8a%a9.html">教师日常工作一站式完成，专为教师服务的桌面AI助手：TaiWe 正式发布，打通备课、出卷、评语、知识库、教研等</a></h3><p>TaiWe教师AI助手 是老师电脑里的一站式AI教学工作台： 以&quot;项目&quot;为组织单位——老师日常面对的多种工作（学科教学、班主任工作、教师成长…</p><a class="more" href="%e6%95%99%e5%b8%88%e6%97%a5%e5%b8%b8%e5%b7%a5%e4%bd%9c%e4%b8%80%e7%ab%99%e5%bc%8f%e5%ae%8c%e6%88%90%ef%bc%8c%e4%b8%93%e4%b8%ba%e6%95%99%e5%b8%88%e6%9c%8d%e5%8a%a1%e7%9a%84%e6%a1%8c%e9%9d%a2ai%e5%8a%a9.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2026-09-30">2026-09-30</time><h3><a href="%e6%96%b0%e5%a2%9e%e4%b8%a4%e4%b8%aa%e5%ae%89%e5%8d%93%e7%89%88%e6%9c%ac%ef%bc%9a%e6%96%b0%e7%ba%bf%e8%b7%af%e7%89%88%e5%92%8c%e9%ab%98%e6%80%a7%e8%83%bd%e7%89%88.html">新增两个安卓版本：新线路版和高性能版</a></h3><p></p><a class="more" href="%e6%96%b0%e5%a2%9e%e4%b8%a4%e4%b8%aa%e5%ae%89%e5%8d%93%e7%89%88%e6%9c%ac%ef%bc%9a%e6%96%b0%e7%ba%bf%e8%b7%af%e7%89%88%e5%92%8c%e9%ab%98%e6%80%a7%e8%83%bd%e7%89%88.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2026-03-05">2026-03-05</time><h3><a href="%e5%a0%82%e6%b5%8b%e4%ba%8c%e7%bb%b4%e7%a0%81%e7%ad%94%e9%a2%98%e5%8d%a1%e4%bd%bf%e7%94%a8%e6%8c%87%e5%8d%97.html">堂测二维码答题卡使用指南</a></h3><p></p><a class="more" href="%e5%a0%82%e6%b5%8b%e4%ba%8c%e7%bb%b4%e7%a0%81%e7%ad%94%e9%a2%98%e5%8d%a1%e4%bd%bf%e7%94%a8%e6%8c%87%e5%8d%97.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-12-23">2025-12-23</time><h3><a href="%e5%a0%82%e6%b5%8bweb%e7%ab%af1231%e6%9b%b4%e6%96%b0.html">堂测Web端1231更新</a></h3><p>堂测Web端1223更新说明</p><a class="more" href="%e5%a0%82%e6%b5%8bweb%e7%ab%af1231%e6%9b%b4%e6%96%b0.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-12-22">2025-12-22</time><h3><a href="faq.html">堂测近期常见问题汇总</a></h3><p>近期堂测常见问题汇总。</p><a class="more" href="faq.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-12-05">2025-12-05</time><h3><a href="%e5%9c%a8%e8%af%be%e5%a0%82%e4%b8%8a%e8%9e%8d%e5%85%a5%e5%a0%82%e6%b5%8b%e5%b7%a5%e5%85%b7%e7%9a%84%e4%ba%94%e7%a7%8d%e6%96%b9%e6%b3%95.html">在课堂上融入堂测工具的五种方法</a></h3><p>老师们是否还在苦苦寻找能在课堂里使用，快速且高效的课堂评测工具？那就来看看堂测！</p><a class="more" href="%e5%9c%a8%e8%af%be%e5%a0%82%e4%b8%8a%e8%9e%8d%e5%85%a5%e5%a0%82%e6%b5%8b%e5%b7%a5%e5%85%b7%e7%9a%84%e4%ba%94%e7%a7%8d%e6%96%b9%e6%b3%95.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-12-04">2025-12-04</time><h3><a href="2025-2026%e5%b9%b4%e5%85%ad%e5%a4%a7%e6%9c%80%e4%bd%b3%e8%af%be%e5%a0%82%e4%ba%92%e5%8a%a8%e5%b7%a5%e5%85%b7%ef%bc%8c%e6%8f%90%e5%8d%87%e5%ad%a6%e7%94%9f%e5%8f%82%e4%b8%8e%e5%ba%a6.html">2025-2026年六大最佳课堂互动工具，提升学生参与度</a></h3><p>在2025年底，2026年即将到来之际，我们对众多教学、学习互动平台进行了评审，选出了六大最适合老师使用的课堂互动工具，这些工具在提升学生参…</p><a class="more" href="2025-2026%e5%b9%b4%e5%85%ad%e5%a4%a7%e6%9c%80%e4%bd%b3%e8%af%be%e5%a0%82%e4%ba%92%e5%8a%a8%e5%b7%a5%e5%85%b7%ef%bc%8c%e6%8f%90%e5%8d%87%e5%ad%a6%e7%94%9f%e5%8f%82%e4%b8%8e%e5%ba%a6.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-12-02">2025-12-02</time><h3><a href="news/251204-4.html">用堂测Tangest点燃课堂：一个简单工具如何提升学生参与度和互动反馈</a></h3><p>无需学生电子设备，教师一部手机即可实现全员实时互动评估</p><a class="more" href="news/251204-4.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-11-28">2025-11-28</time><h3><a href="%e5%a0%82%e6%b5%8b%e7%bd%91%e6%9b%b4%e6%96%b0%ef%bc%9a25%e5%b9%b411%e6%9c%8828%e6%97%a5.html">堂测网更新：25年11月28日</a></h3><p>堂测网11月28日更新说明。</p><a class="more" href="%e5%a0%82%e6%b5%8b%e7%bd%91%e6%9b%b4%e6%96%b0%ef%bc%9a25%e5%b9%b411%e6%9c%8828%e6%97%a5.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-11-17">2025-11-17</time><h3><a href="news/251204-3.html">2025年最值得推荐的课堂教学工具：堂测网</a></h3><p>2025年11月，全国教育科学研究协会针对今年来基于AI服务涌现出的各种教育、学习工具做了调研，在其发布的《2025年度人工智能涌动下的教育…</p><a class="more" href="news/251204-3.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-11-17">2025-11-17</time><h3><a href="%e5%a0%82%e6%b5%8b%e6%9b%b4%e6%96%b0%ef%bc%9a1103-1117.html">堂测更新：1103-1117</a></h3><p>近期更新：AI模型更换，批量出题更快速，提供AI诊断分析报告，个性化学情分析；题干和选项部分支持Latex语法。</p><a class="more" href="%e5%a0%82%e6%b5%8b%e6%9b%b4%e6%96%b0%ef%bc%9a1103-1117.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-11-06">2025-11-06</time><h3><a href="news/251204-2.html">精准教学的底气！来自堂测的多维度数据支撑</a></h3><p>堂测课堂反馈系统也太懂老师啦！让学情数据随时获取： 老师快捷扫码学生答题数据，系统后台悄悄汇总统计好，给出超全面的多维度数据呈现～ 📊不管是…</p><a class="more" href="news/251204-2.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-11-03">2025-11-03</time><h3><a href="%e5%a0%82%e6%b5%8b%e4%b8%80%e5%91%a8%e6%9b%b4%e6%96%b0%e6%97%a5%e5%bf%97.html">堂测一周更新日志</a></h3><p>堂测网10月28日到11月3日更新日志。</p><a class="more" href="%e5%a0%82%e6%b5%8b%e4%b8%80%e5%91%a8%e6%9b%b4%e6%96%b0%e6%97%a5%e5%bf%97.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-11-03">2025-11-03</time><h3><a href="%e5%a0%82%e6%b5%8b%e4%b8%8a%e6%96%b0%ef%bc%8cai%e4%b8%80%e9%94%ae%e7%94%9f%e6%88%90%e8%af%be%e5%a0%82%e6%b5%8b%e9%aa%8c%e9%a2%98%ef%bc%81.html">堂测上新，AI一键生成课堂测验题！</a></h3><p>堂测TangEST今天凌晨做了更新，其中一项重要的功能就是支持AI自动创建课堂小测题。 创建/编辑习题集时，现在可以用AI自动出选择题啦‼️…</p><a class="more" href="%e5%a0%82%e6%b5%8b%e4%b8%8a%e6%96%b0%ef%bc%8cai%e4%b8%80%e9%94%ae%e7%94%9f%e6%88%90%e8%af%be%e5%a0%82%e6%b5%8b%e9%aa%8c%e9%a2%98%ef%bc%81.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-11-03">2025-11-03</time><h3><a href="%e5%93%88%e4%bd%9b%e5%a4%a7%e5%ad%a6%ef%bc%9a%e5%ad%a6%e7%94%9f%e8%87%aa%e4%b8%bb%e9%a1%b9%e7%9b%ae%e4%b8%ad%e7%9a%84%e7%94%9f%e6%88%90%e5%bc%8f%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%ef%bc%9a%e5%bb%ba.html">哈佛大学：学生自主项目中的生成式人工智能：建议与启发</a></h3><p>哈佛大学教育研究生院发布的《学生自主项目中的GenAI：建议和启示》指南包含了关于生成式人工智能如何支持自主项目的建议与灵感，帮助学生在面对…</p><a class="more" href="%e5%93%88%e4%bd%9b%e5%a4%a7%e5%ad%a6%ef%bc%9a%e5%ad%a6%e7%94%9f%e8%87%aa%e4%b8%bb%e9%a1%b9%e7%9b%ae%e4%b8%ad%e7%9a%84%e7%94%9f%e6%88%90%e5%bc%8f%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%ef%bc%9a%e5%bb%ba.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-30">2025-10-30</time><h3><a href="news/251203-1.html">3 步搞定课堂小测，堂测系统让你课堂效率翻倍</a></h3><p>堂测网Web 端能够管理班级学生信息，把学生的学号、姓名录入系统，再给每个学生分配专属的堂测二维码卡片 —— 卡片可以自助打印，有32人、6…</p><a class="more" href="news/251203-1.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-29">2025-10-29</time><h3><a href="news/251029-1.html">别再让课堂小测 “白费力”！一张纸 + 一个 APP，帮你把教学效率提 3 倍</a></h3><p>堂测 TangEST，恰恰是用最简单的方式，帮老师 “省出时间”—— 不用改卷子，不用等结果，不用猜 “学生懂没懂”，把省下来的时间，用在更…</p><a class="more" href="news/251029-1.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-28">2025-10-28</time><h3><a href="%e5%b0%8f%e5%ad%a6%e6%95%b0%e5%ad%a6%e8%af%be%e5%a0%82%e4%b8%ad%e7%9a%84%e5%bd%93%e5%a0%82%e6%a3%80%e6%b5%8b%e7%ad%96%e7%95%a5%e6%8e%a2%e7%b4%a2.html">小学数学课堂中的当堂检测策略探索</a></h3><p>当堂达标检测，这一短暂的3-5分钟环节，恰似一柄精妙的“尺子”，它既能准确衡量学生的学习进度与掌握程度，同时也能为教师调整教学策略提供明确的…</p><a class="more" href="%e5%b0%8f%e5%ad%a6%e6%95%b0%e5%ad%a6%e8%af%be%e5%a0%82%e4%b8%ad%e7%9a%84%e5%bd%93%e5%a0%82%e6%a3%80%e6%b5%8b%e7%ad%96%e7%95%a5%e6%8e%a2%e7%b4%a2.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-27">2025-10-27</time><h3><a href="%e5%a0%82%e6%b5%8btangest-%e8%81%9a%e7%84%a6%ef%bc%9a%e6%95%b0%e6%8d%ae%e9%a9%b1%e5%8a%a8%ef%bc%8c%e5%9b%a0%e6%9d%90%e6%96%bd%e6%95%99.html">堂测TangEST — 聚焦：数据驱动，因材施教</a></h3><p>堂测网以课堂测评与教学数据为核心，通过即时测评、可视化分析与智能反馈，帮助教师在每一堂课中做出更精准的教学决策，实现个性化教学与教学效果的持…</p><a class="more" href="%e5%a0%82%e6%b5%8btangest-%e8%81%9a%e7%84%a6%ef%bc%9a%e6%95%b0%e6%8d%ae%e9%a9%b1%e5%8a%a8%ef%bc%8c%e5%9b%a0%e6%9d%90%e6%96%bd%e6%95%99.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-27">2025-10-27</time><h3><a href="news/251027-1.html">2025一线老师必备：适合老师上课使用的系统</a></h3><p>课堂上提升教学效率的工具种类繁多，涵盖了课件制作、课堂互动、教学管理等多个方面。以下是一些常见的工具推荐。</p><a class="more" href="news/251027-1.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-27">2025-10-27</time><h3><a href="ai%e8%be%85%e5%8a%a9%e6%95%99%e5%ad%a6%e7%9a%84%e5%9b%9b%e5%a4%a7%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af%e4%b9%8b%ef%bc%9a%e8%b5%8b%e8%83%bd%e5%ad%a6%e4%b9%a0%e8%af%84%e4%bb%b7.html">AI辅助教学的四大应用场景之：赋能学习评价</a></h3><p>AI技术正在为传统的学习评价方式带来深刻变革，它能够提高评价效率，提供更即时、更细致的反馈，并从数据中挖掘出更深层次的学习洞察。从自动批改客…</p><a class="more" href="ai%e8%be%85%e5%8a%a9%e6%95%99%e5%ad%a6%e7%9a%84%e5%9b%9b%e5%a4%a7%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af%e4%b9%8b%ef%bc%9a%e8%b5%8b%e8%83%bd%e5%ad%a6%e4%b9%a0%e8%af%84%e4%bb%b7.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-26">2025-10-26</time><h3><a href="%e4%b8%ad%e8%a5%bf%e9%83%a8%e4%b8%ad%e5%b0%8f%e5%ad%a6%e6%95%99%e5%b8%88%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e7%b4%a0%e5%85%bb%e6%8f%90%e5%8d%87-%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e9%80%9a%e8%af%86.html">【视频】中西部中小学教师人工智能素养提升-人工智能通识-徐坤 北京邮电大学校长、教授</a></h3><p></p><a class="more" href="%e4%b8%ad%e8%a5%bf%e9%83%a8%e4%b8%ad%e5%b0%8f%e5%ad%a6%e6%95%99%e5%b8%88%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e7%b4%a0%e5%85%bb%e6%8f%90%e5%8d%87-%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e9%80%9a%e8%af%86.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-26">2025-10-26</time><h3><a href="ai%e8%be%85%e5%8a%a9%e6%95%99%e5%ad%a6%e7%9a%84%e5%9b%9b%e5%a4%a7%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af%e4%b9%8b%ef%bc%9a%e8%9e%8d%e5%85%a5%e8%af%be%e5%a0%82%e4%b8%8e%e8%af%be%e7%a8%8b%e5%ad%a6%e4%b9%a0.html">AI辅助教学的四大应用场景之：融入课堂与课程学习</a></h3><p>AI智能体（AI Agent）是指被设计用来在教育场景中与学生进行互动的轻量级人工智能系统。它们可以扮演多种角色，如答疑助手、学习伙伴，甚至…</p><a class="more" href="ai%e8%be%85%e5%8a%a9%e6%95%99%e5%ad%a6%e7%9a%84%e5%9b%9b%e5%a4%a7%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af%e4%b9%8b%ef%bc%9a%e8%9e%8d%e5%85%a5%e8%af%be%e5%a0%82%e4%b8%8e%e8%af%be%e7%a8%8b%e5%ad%a6%e4%b9%a0.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-26">2025-10-26</time><h3><a href="ai%e8%be%85%e5%8a%a9%e6%95%99%e5%ad%a6%e7%9a%84%e5%9b%9b%e5%a4%a7%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af%e4%b9%8b%ef%bc%9a%e8%b5%84%e6%ba%90%e4%b8%8e%e5%b7%a5%e5%85%b7%e7%94%9f%e6%88%90.html">AI辅助教学的四大应用场景之：资源与工具生成</a></h3><p>除了辅助教学设计，AI在直接创建和定制各种教学资源与交互工具方面也展现出强大的能力。无论是生成练习题、制作PPT文稿，还是开发简单的模拟场景…</p><a class="more" href="ai%e8%be%85%e5%8a%a9%e6%95%99%e5%ad%a6%e7%9a%84%e5%9b%9b%e5%a4%a7%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af%e4%b9%8b%ef%bc%9a%e8%b5%84%e6%ba%90%e4%b8%8e%e5%b7%a5%e5%85%b7%e7%94%9f%e6%88%90.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-26">2025-10-26</time><h3><a href="ai%e8%be%85%e5%8a%a9%e6%95%99%e5%ad%a6%e7%9a%84%e5%9b%9b%e5%a4%a7%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af%e4%b9%8b%ef%bc%9a%e8%af%be%e5%89%8d.html">AI辅助教学的四大应用场景之：教学设计</a></h3><p>AI辅助教学设计，是指利用人工智能工具来辅助教师进行课程规划、活动设计、学习路径构建以及评估方法构思的过程。诸如DeepSeek、ChatG…</p><a class="more" href="ai%e8%be%85%e5%8a%a9%e6%95%99%e5%ad%a6%e7%9a%84%e5%9b%9b%e5%a4%a7%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af%e4%b9%8b%ef%bc%9a%e8%af%be%e5%89%8d.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-26">2025-10-26</time><h3><a href="%e7%94%a8ai%e7%9a%84%e6%ad%a3%e7%a1%ae%e6%96%b9%e5%bc%8f%ef%bc%9a%e7%bb%99%e8%80%81%e5%b8%88%e4%bb%ac%e7%9a%84%e5%bb%ba%e8%ae%ae.html">用AI的正确方式：给老师们的建议</a></h3><p>你有没有这样的感受：每次向 AI 提问，它很快给出一个 “看起来还行” 的答案，你也就收工了。效率是提升了，但灵感并没有变多，结果也没有更好…</p><a class="more" href="%e7%94%a8ai%e7%9a%84%e6%ad%a3%e7%a1%ae%e6%96%b9%e5%bc%8f%ef%bc%9a%e7%bb%99%e8%80%81%e5%b8%88%e4%bb%ac%e7%9a%84%e5%bb%ba%e8%ae%ae.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-24">2025-10-24</time><h3><a href="%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%97%b6%e4%bb%a3%e7%9a%84%e6%95%99%e8%82%b2-%e5%be%90%e6%89%ac%e7%94%9f%e6%a0%a1%e9%95%bf%e5%9c%a8%e6%99%ae%e9%80%9a%e9%ab%98%e4%b8%ad%e6%a0%a1.html">人工智能时代的教育——徐扬生校长在普通高中校长年会（2025）上的主旨报告</a></h3><p>中国工程院院士、美国国家工程院外籍院士、香港中文大学（深圳）校长徐扬生在会上发表了以《人工智能时代的教育》为题的主旨报告。他指出，在人工智能…</p><a class="more" href="%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%97%b6%e4%bb%a3%e7%9a%84%e6%95%99%e8%82%b2-%e5%be%90%e6%89%ac%e7%94%9f%e6%a0%a1%e9%95%bf%e5%9c%a8%e6%99%ae%e9%80%9a%e9%ab%98%e4%b8%ad%e6%a0%a1.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-24">2025-10-24</time><h3><a href="ai-%e9%a9%b1%e5%8a%a8%e7%9a%84-k12-%e9%9d%a9%e5%91%bd%ef%bc%9aalpha-school-%e7%9a%84%e5%ae%9e%e8%b7%b5%e4%b8%8e%e6%8e%a2%e7%b4%a2.html">AI 驱动的 K12 革命：Alpha School 的实践与探索</a></h3><p>人工智能不再只是教育的辅助工具，而正在成为课堂运转的核心动力。无论是在 K12 学校里让孩子们每天用两小时就能完成个性化学习，还是在大学课堂…</p><a class="more" href="ai-%e9%a9%b1%e5%8a%a8%e7%9a%84-k12-%e9%9d%a9%e5%91%bd%ef%bc%9aalpha-school-%e7%9a%84%e5%ae%9e%e8%b7%b5%e4%b8%8e%e6%8e%a2%e7%b4%a2.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-22">2025-10-22</time><h3><a href="%e4%b8%ad%e8%a5%bf%e9%83%a8%e4%b8%ad%e5%b0%8f%e5%ad%a6%e6%95%99%e5%b8%88%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e7%b4%a0%e5%85%bb%e6%8f%90%e5%8d%87%e4%b8%93%e9%a2%98%e5%86%85%e5%ae%b9%ef%bc%88%e5%90%95.html">中西部中小学教师人工智能素养提升专题内容（吕争老师）</a></h3><p>围绕中小学人工智能教育展开，从课程教学、实践案例及教师发展三方面系统阐述，旨在推动 AI 教育与教学实践深度融合，培养适配新质生产力发展的人…</p><a class="more" href="%e4%b8%ad%e8%a5%bf%e9%83%a8%e4%b8%ad%e5%b0%8f%e5%ad%a6%e6%95%99%e5%b8%88%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e7%b4%a0%e5%85%bb%e6%8f%90%e5%8d%87%e4%b8%93%e9%a2%98%e5%86%85%e5%ae%b9%ef%bc%88%e5%90%95.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-22">2025-10-22</time><h3><a href="%e4%b8%ad%e8%a5%bf%e9%83%a8%e4%b8%ad%e5%b0%8f%e5%ad%a6%e6%95%99%e5%b8%88%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e7%b4%a0%e5%85%bb%e6%8f%90%e5%8d%87%e4%b8%93%e9%a2%98%e5%86%85%e5%ae%b9%ef%bc%88%e9%99%88.html">中西部中小学教师人工智能素养提升专题内容（陈义顺老师）</a></h3><p>本笔记围绕教育中常见人工智能工具应用技能展开，课程定位为人工智能系列基础课，面向中小学教师与教研骨干，目标是建立工具全景与最小闭环，沉淀可复…</p><a class="more" href="%e4%b8%ad%e8%a5%bf%e9%83%a8%e4%b8%ad%e5%b0%8f%e5%ad%a6%e6%95%99%e5%b8%88%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e7%b4%a0%e5%85%bb%e6%8f%90%e5%8d%87%e4%b8%93%e9%a2%98%e5%86%85%e5%ae%b9%ef%bc%88%e9%99%88.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-22">2025-10-22</time><h3><a href="%e4%b8%ad%e8%a5%bf%e9%83%a8%e4%b8%ad%e5%b0%8f%e5%ad%a6%e6%95%99%e5%b8%88%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e7%b4%a0%e5%85%bb%e6%8f%90%e5%8d%87%e4%b8%93%e9%a2%98%e5%86%85%e5%ae%b9%ef%bc%8810%e6%9c%88.html">中西部中小学教师人工智能素养提升专题内容（10月22日）</a></h3><p>本笔记围绕中西部中小学教师人工智能素养提升，涵盖多方面内容。首先介绍人工智能技术演进，包括发展历程、技术方向及智能体构成与能力。其次阐述技术…</p><a class="more" href="%e4%b8%ad%e8%a5%bf%e9%83%a8%e4%b8%ad%e5%b0%8f%e5%ad%a6%e6%95%99%e5%b8%88%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e7%b4%a0%e5%85%bb%e6%8f%90%e5%8d%87%e4%b8%93%e9%a2%98%e5%86%85%e5%ae%b9%ef%bc%8810%e6%9c%88.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-22">2025-10-22</time><h3><a href="%e4%b8%ad%e8%a5%bf%e9%83%a8%e4%b8%ad%e5%b0%8f%e5%ad%a6%e6%95%99%e5%b8%88%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e7%b4%a0%e5%85%bb%e6%8f%90%e5%8d%87%e4%b8%93%e9%a2%98%e5%9f%b9%e8%ae%ad%ef%bc%882025-2.html">中西部中小学教师人工智能素养提升专题培训（2025 年 10 月 21 日下午场）</a></h3><p>本次下午场的教学案例交流，从课堂生态构建（陈本津）、习作教学创新（黄平平）、备授课全流程赋能（苏会艳）三个维度，展现了人工智能在中西部中小学…</p><a class="more" href="%e4%b8%ad%e8%a5%bf%e9%83%a8%e4%b8%ad%e5%b0%8f%e5%ad%a6%e6%95%99%e5%b8%88%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e7%b4%a0%e5%85%bb%e6%8f%90%e5%8d%87%e4%b8%93%e9%a2%98%e5%9f%b9%e8%ae%ad%ef%bc%882025-2.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-22">2025-10-22</time><h3><a href="%e4%b8%ad%e8%a5%bf%e9%83%a8%e4%b8%ad%e5%b0%8f%e5%ad%a6%e6%95%99%e5%b8%88%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e7%b4%a0%e5%85%bb%e6%8f%90%e5%8d%87%e4%b8%93%e9%a2%98%e5%9f%b9%e8%ae%ad%ef%bc%882025.html">中西部中小学教师人工智能素养提升专题培训（2025 年 10 月 21 日上午场）</a></h3><p>本次上午场培训从工具应用与课程设计两个维度，为中西部中小学教师提供了人工智能融入教学的具体路径，既解决了 “技术怎么用” 的实操问题，又明确…</p><a class="more" href="%e4%b8%ad%e8%a5%bf%e9%83%a8%e4%b8%ad%e5%b0%8f%e5%ad%a6%e6%95%99%e5%b8%88%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e7%b4%a0%e5%85%bb%e6%8f%90%e5%8d%87%e4%b8%93%e9%a2%98%e5%9f%b9%e8%ae%ad%ef%bc%882025.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-22">2025-10-22</time><h3><a href="%e4%b8%ad%e8%a5%bf%e9%83%a8%e4%b8%ad%e5%b0%8f%e5%ad%a6%e6%95%99%e5%b8%88%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e7%b4%a0%e5%85%bb%e6%8f%90%e5%8d%87%e4%b8%93%e9%a2%98%e5%9f%b9%e8%ae%ad%e5%85%a8%e8%ae%b0.html">中西部中小学教师人工智能素养提升专题培训全记录（2025 年 10 月 20 日）</a></h3><p>解读国家智慧中小学平台作业成果导向，提出三层次作业设计模型，分享 GAI 赋能作业设计的方法、策略及以作文为例的数据分析闭环流程。 培训全方…</p><a class="more" href="%e4%b8%ad%e8%a5%bf%e9%83%a8%e4%b8%ad%e5%b0%8f%e5%ad%a6%e6%95%99%e5%b8%88%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e7%b4%a0%e5%85%bb%e6%8f%90%e5%8d%87%e4%b8%93%e9%a2%98%e5%9f%b9%e8%ae%ad%e5%85%a8%e8%ae%b0.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-22">2025-10-22</time><h3><a href="%e5%a4%9a%e8%b7%af%e5%be%84%e7%a0%b4%e8%a7%a3%e4%b8%ad%e5%b0%8f%e5%ad%a6ai%e6%95%99%e8%82%b2%e8%b0%81%e6%9d%a5%e6%95%99%e9%9a%be%e9%a2%98.html">多路径破解中小学AI教育“谁来教”难题</a></h3><p>中小学人工智能教育的普及和发展，重点讲述了浙江省杭州市的实践经验。文章强调通过分阶段课程设计、场景化实践和师资培训等多路径破解中小学AI教育…</p><a class="more" href="%e5%a4%9a%e8%b7%af%e5%be%84%e7%a0%b4%e8%a7%a3%e4%b8%ad%e5%b0%8f%e5%ad%a6ai%e6%95%99%e8%82%b2%e8%b0%81%e6%9d%a5%e6%95%99%e9%9a%be%e9%a2%98.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-22">2025-10-22</time><h3><a href="%e7%ac%ac%e4%b8%89%e6%89%b9%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e9%ab%98%e7%ad%89%e6%95%99%e8%82%b2%e5%85%b8%e5%9e%8b%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af%e6%a1%88%e4%be%8b%e5%85%ac.html">第三批“人工智能+高等教育”典型应用场景案例公布</a></h3><p>教育部公布的第三批“人工智能+高等教育”典型应用场景案例，其中重庆大学和陆军军医大学各有一项案例入选。文章介绍了两个案例的具体内容，并强调了…</p><a class="more" href="%e7%ac%ac%e4%b8%89%e6%89%b9%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e9%ab%98%e7%ad%89%e6%95%99%e8%82%b2%e5%85%b8%e5%9e%8b%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af%e6%a1%88%e4%be%8b%e5%85%ac.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-22">2025-10-22</time><h3><a href="ai-classroom%e8%af%be%e9%a2%98%e6%8e%a8%e8%bf%9b%e6%b4%bb%e5%8a%a8%e5%91%88%e7%8e%b0%e8%af%be%e5%a0%82%e6%96%b0%e6%a0%b7%e6%80%81.html">AI Classroom课题推进活动呈现课堂新样态</a></h3><p>活动旨在推动人机协同下的课堂教学变革，提升教师专业发展，促进学生全面发展。活动展示了利用AI技术进行课堂观察和分析的实践案例，并探讨了AI技…</p><a class="more" href="ai-classroom%e8%af%be%e9%a2%98%e6%8e%a8%e8%bf%9b%e6%b4%bb%e5%8a%a8%e5%91%88%e7%8e%b0%e8%af%be%e5%a0%82%e6%96%b0%e6%a0%b7%e6%80%81.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-22">2025-10-22</time><h3><a href="ai%e4%b8%89%e5%a4%a7%e8%ae%a4%e7%9f%a5%e7%bc%ba%e9%99%b7%e8%ae%a9karpathy%e9%87%8d%e4%bc%b0%e4%ba%86%e6%8a%80%e6%9c%af%e8%bf%9b%e5%ba%a6.html">AI三大认知缺陷让Karpathy重估了技术进度</a></h3><p>AI领域专家Karpathy对AGI实现进度的看法。他认为，当前AI存在三大认知缺陷，导致AGI仍需十年才能实现。他强调，AGI的实现需要克…</p><a class="more" href="ai%e4%b8%89%e5%a4%a7%e8%ae%a4%e7%9f%a5%e7%bc%ba%e9%99%b7%e8%ae%a9karpathy%e9%87%8d%e4%bc%b0%e4%ba%86%e6%8a%80%e6%9c%af%e8%bf%9b%e5%ba%a6.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-22">2025-10-22</time><h3><a href="deepseek10%e5%80%8d%e5%8e%8b%e7%bc%a9%e7%8e%87%ef%bc%8c97%e8%a7%a3%e7%a0%81%e7%b2%be%e5%ba%a6%ef%bc%81.html">DeepSeek:10倍压缩率，97%解码精度！</a></h3><p></p><a class="more" href="deepseek10%e5%80%8d%e5%8e%8b%e7%bc%a9%e7%8e%87%ef%bc%8c97%e8%a7%a3%e7%a0%81%e7%b2%be%e5%ba%a6%ef%bc%81.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-22">2025-10-22</time><h3><a href="ai%e8%b5%8b%e8%83%bd%e6%95%99%e5%b8%88%e6%95%99%e8%82%b2%e6%96%b0%e8%b7%af%e5%be%84.html">AI赋能教师教育新路径</a></h3><p></p><a class="more" href="ai%e8%b5%8b%e8%83%bd%e6%95%99%e5%b8%88%e6%95%99%e8%82%b2%e6%96%b0%e8%b7%af%e5%be%84.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-22">2025-10-22</time><h3><a href="%e6%95%99%e8%82%b2ai%e5%8a%a0%e9%80%9f%e6%8e%a8%e8%bf%9b%e4%b8%ad%e5%b0%8f%e5%ad%a6%e6%a0%a1%e6%95%99%e8%82%b2%e8%8c%83%e5%bc%8f%e9%9d%a9%e5%91%bd.html">“教育+AI”加速推进中小学校教育“范式革命”</a></h3><p></p><a class="more" href="%e6%95%99%e8%82%b2ai%e5%8a%a0%e9%80%9f%e6%8e%a8%e8%bf%9b%e4%b8%ad%e5%b0%8f%e5%ad%a6%e6%a0%a1%e6%95%99%e8%82%b2%e8%8c%83%e5%bc%8f%e9%9d%a9%e5%91%bd.html">阅读全文 →</a></article>
+<article class="card"><time datetime="2025-10-22">2025-10-22</time><h3><a href="openai%e6%8e%a8%e5%87%baai%e6%b5%8f%e8%a7%88%e5%99%a8%ef%bc%9achatgpt-atlas.html">OPENAI推出AI浏览器：ChatGPT Atlas</a></h3><p></p><a class="more" href="openai%e6%8e%a8%e5%87%baai%e6%b5%8f%e8%a7%88%e5%99%a8%ef%bc%9achatgpt-atlas.html">阅读全文 →</a></article>
+</div>
+</section>
+<section class="intro">
+<h2>一、<a href="https://www.tangest.cn">堂测</a>的核心价值</h2>
 
 
 
@@ -125,7 +137,7 @@
 
 
 
-<h3 class="wp-block-heading">二、一堂课，见证数据如何改变教学（流程示例）<br></h3>
+<h2>二、一堂课，见证数据如何改变教学（流程示例）<br></h2>
 
 
 
@@ -137,7 +149,7 @@
 
 
 
-<figure class="wp-block-image size-full"><img decoding="async" width="553" height="303" src="imgs/keqian.png" alt="" class="wp-image-131"  /></figure>
+<figure><img src="imgs/keqian.png" alt=""></figure>
 
 
 
@@ -149,7 +161,7 @@
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="606" height="282" src="imgs/kezhong.png" alt="" class="wp-image-132" /></figure>
+<figure><img src="imgs/kezhong.png" alt=""></figure>
 
 
 
@@ -161,11 +173,11 @@
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="613" height="334" src="imgs/kehou.png" alt="" class="wp-image-133"  /></figure>
+<figure><img src="imgs/kehou.png" alt=""></figure>
 
 
 
-<h3 class="wp-block-heading">三、<a href="https://www.tangest.cn">堂测</a>系统构成（模块化设计）</h3>
+<h2>三、<a href="https://www.tangest.cn">堂测</a>系统构成（模块化设计）</h2>
 
 
 
@@ -185,7 +197,7 @@
 
 
 
-<figure class="wp-block-image size-full is-resized"><img loading="lazy" decoding="async" width="568" height="426" src="imgs/webtangce.png" alt="" class="wp-image-134" style="width:537px;height:auto" /></figure>
+<figure><img src="imgs/webtangce.png" alt=""></figure>
 
 
 
@@ -197,7 +209,7 @@
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="534" height="395" src="imgs/apptangce.png" alt="" class="wp-image-135"  /></figure>
+<figure><img src="imgs/apptangce.png" alt=""></figure>
 
 
 
@@ -209,49 +221,49 @@
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="452" height="298" src="imgs/qcrodetangce.png" alt="" class="wp-image-136"  /></figure>
+<figure><img src="imgs/qcrodetangce.png" alt=""></figure>
 
 
 
-<h3 class="wp-block-heading">四、老师们最关心的问题，我们这样解决</h3>
+<h2>四、老师们最关心的问题，我们这样解决</h2>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li>&#8220;扫码会不会很慢、很麻烦？&#8221;<br>无需走下讲台，几秒收集完全班答案。<a href="https://www.tangest.cn">堂测</a>APP支持批量扫码和缩放扫码技术，您站在讲台即可一次性捕捉多个学生二维码。一个50人的班级，通常在4-5秒内即可完成全部收集，完全不影响课堂节奏。</li>
 </ul>
 
 
 
-<p></p>
 
 
 
-<ul class="wp-block-list">
+
+<ul>
 <li>&#8220;教室网络不稳定怎么办？&#8221;<br>无网环境，照样流畅测验。我们采用本地数据缓存技术。扫码、统计、分析全过程不受网络环境影响，数据结果立即呈现。同步至云端，安全无忧。</li>
 </ul>
 
 
 
-<p></p>
 
 
 
-<ul class="wp-block-list">
+
+<ul>
 <li>&#8220;数据能帮我真正定位问题吗？&#8221;<br>不止于正确率，更洞察错误根源。系统能精准定位到选择每一个错误选项的具体学生，让您不仅能讲&#8221;为什么对&#8221;，更能讲&#8221;为什么错&#8221;，实现真正的精准教学。</li>
 </ul>
 
 
 
-<p></p>
 
 
 
-<h3 class="wp-block-heading">六、典型应用场景（举例）</h3>
+
+<h2>六、典型应用场景（举例）</h2>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li>日常课堂小测：10-15 分钟快测实现单节课内诊断。</li>
 
 
@@ -265,7 +277,7 @@
 
 
 
-<h3 class="wp-block-heading">七、一句话结尾（行动号召）</h3>
+<h2>七、一句话结尾（行动号召）</h2>
 
 
 
@@ -274,25 +286,8 @@
 
 
 <p><a href="https://www.tangest.cn">https://www.tangest.cn</a></p>
-
-          </div>
-          <div class="two-col-right">
-            <img src="imgs/slogan.png" alt="堂测示意图" width="400px" />
-          </div>
-        </section>
-
-  
-
-
-      </main>
-    </div>
-    <div>
-<section>
-<footer>
-          © 2025 <a href="https://www.tangest.cn">堂测</a>网 &nbsp;|&nbsp; 数据驱动，因材施教 &nbsp;•&nbsp; <a href="#contact" style="color:var(--accent);text-decoration:none">联系我们</a>
-</footer>
-</section>    
-    </div>
-
-  </body>
+</section>
+</main>
+<footer>© 2025-2026 <a href="https://www.tangest.cn">堂测</a>网 &nbsp;|&nbsp; 数据驱动，因材施教<br><a href="index.html">首页</a> · <a href="blogging.html">堂测动态</a> · <a href="servies.html">相关报道</a> · <a href="faq.html">帮助</a></footer>
+</body>
 </html>

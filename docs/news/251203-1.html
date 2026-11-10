@@ -1,65 +1,43 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>3 步搞定课堂小测，堂测系统让你课堂效率翻倍 - 堂测网</title>
-    <style>
-      :root{--bg:#f6fbff;--accent:#2563eb;--muted:#6b7280;--card:#ffffff;--max-width:1120px}
-      *{box-sizing:border-box}
-      body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Noto Sans CJK SC",sans-serif;margin:0;color:#0f172a;background:var(--bg)}
-      .app{display:flex;min-height:100vh}
-      .sidebar{width:220px;background:linear-gradient(180deg,#fff,#fbfdff);border-right:1px solid #e6eef8;padding:28px}
-      .logo{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--accent);font-size:18px;margin-bottom:18px}
-      .nav{margin-top:8px}
-      .nav a{display:block;color:#111827;text-decoration:none;padding:10px 8px;border-radius:8px;margin-bottom:6px}
-      .nav a:hover{background:#eef6ff}
-      .main{flex:1;padding:40px;display:flex;justify-content:center}
-      .container{width:100%;max-width:var(--max-width)}
-      .hero{display:flex;gap:32px;align-items:center;background:var(--card);padding:36px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
-      .hero-left{flex:1}
-      .eyebrow{color:var(--muted);font-size:13px;margin-bottom:8px}
-      h1{font-size:34px;margin:6px 0 12px;line-height:1.15}
-      .lead{color:#334155;line-height:1.8;font-size:16px}
-      .cta{margin-top:18px;display:flex;gap:12px}
-      .btn{background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
-      .btn.secondary{background:transparent;color:var(--accent);border:1px solid rgba(37,99,235,0.12)}
-      .hero-right img{max-width:420px;border-radius:10px;display:block}
-      .two-col{display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:flex-start;background:transparent}
-      .two-col .two-col-left{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 14px rgba(15,23,42,0.04)}
-      .two-col .two-col-right{display:flex;justify-content:center;align-items:flex-start;align-self:flex-start}
-      .two-col .two-col-right img{width:400px;max-width:100%;border-radius:8px;display:block;margin-top:0}
-      .two-col-right{display:flex;justify-content:center;align-items:flex-start;align-self:flex-start}
-      .two-col-right img{width:400px;max-width:100%;border-radius:8px;display:block;margin-top:0}
-      .section-title{display:flex;align-items:center;gap:14px;margin-bottom:12px}
-      .section-title h2{margin:0;font-size:20px}
-      .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-      .faq .q{background:var(--card);padding:14px;border-radius:8px;margin-bottom:10px}
-      .q h4{margin:0 0 6px}
-      .q p{margin:0;color:var(--muted);font-size:14px}
-      footer{margin-top:36px;color:var(--muted);font-size:13px;text-align:center}
-      @media (max-width:900px){.hero{flex-direction:column}.cards{grid-template-columns:repeat(1,1fr)}.grid-2{grid-template-columns:1fr}.sidebar{display:none}}
-    </style>
-  </head>
-  <body>
-    <div class="app">
-      <aside class="sidebar">
-        <div class="logo"><a href="https://www.tangest.cn">堂测</a>网</div>
-        <nav class="nav">
-          <a href="/tangest/index.html">首页</a>
-          <a href="/tangest/blogging.html">堂测动态</a>
-          <a href="/tangest/servies.html">相关报道</a>
-          <a href="/tangest/faq.html">帮助</a>
-        </nav>
-      </aside>
-      <main class="main">
-        <section class="hero">
-          <div class="hero-left">
-            <div class="eyebrow"><a href="/index.html">首页</a>  -  <a href="/servies.html">相关报道</a>  -  <span>10 月 30, 2025</span></div>
-            <h1>3 步搞定课堂小测，堂测系统让你课堂效率翻倍</h1>
-
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>3 步搞定课堂小测，堂测系统让你课堂效率翻倍 - 堂测网</title>
+<meta name="description" content="堂测网Web 端能够管理班级学生信息，把学生的学号、姓名录入系统，再给每个学生分配专属的堂测二维码卡片 —— 卡片可以自助打印，有32人、64 人、128 人三种规格，不管你带的是小班还是大班，都能用；卡片耐用，学生可以反复用，不用每次都打印。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="堂测网">
+<meta property="og:title" content="3 步搞定课堂小测，堂测系统让你课堂效率翻倍 - 堂测网">
+<meta property="og:description" content="堂测网Web 端能够管理班级学生信息，把学生的学号、姓名录入系统，再给每个学生分配专属的堂测二维码卡片 —— 卡片可以自助打印，有32人、64 人、128 人三种规格，不管你带的是小班还是大班，都能用；卡片耐用，学生可以反复用，不用每次都打印。">
+<meta property="og:url" content="https://xeenet.github.io/tangest/news/251203-1.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="3 步搞定课堂小测，堂测系统让你课堂效率翻倍 - 堂测网">
+<meta name="twitter:description" content="堂测网Web 端能够管理班级学生信息，把学生的学号、姓名录入系统，再给每个学生分配专属的堂测二维码卡片 —— 卡片可以自助打印，有32人、64 人、128 人三种规格，不管你带的是小班还是大班，都能用；卡片耐用，学生可以反复用，不用每次都打印。">
+<link rel="canonical" href="https://xeenet.github.io/tangest/news/251203-1.html">
+<link rel="stylesheet" href="../assets/site.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"3 步搞定课堂小测，堂测系统让你课堂效率翻倍","datePublished":"2025-10-30","author":{"@type":"Organization","name":"堂测"},"publisher":{"@type":"Organization","name":"堂测"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://xeenet.github.io/tangest/news/251203-1.html"}}
+</script>
+</head>
+<body>
+<header class="topnav"><div class="topnav-inner">
+<a class="logo" href="../index.html">堂测<em>网</em></a>
+<nav>
+<a href="../index.html">首页</a>
+<a href="../index.html#articles" class="active">文章</a>
+<a href="../blogging.html">堂测动态</a>
+<a href="../servies.html">相关报道</a>
+<a href="../faq.html">帮助</a>
+</nav>
+</div></header>
+<main class="main">
+<nav class="crumbs"><a href="../index.html">首页</a> / <a href="../index.html#articles">文章</a> / 3 步搞定课堂小测，堂测系统让你课堂效率翻倍</nav>
+<article class="article">
+<h1>3 步搞定课堂小测，堂测系统让你课堂效率翻倍</h1>
+<div class="meta"><b>堂测小编</b> · 2025-10-30 · 堂测网</div>
+<div class="article-body">
 <p>第一部分：Web 管理端 —— 老师的 “备课 + 分析中心”</p>
-<figure class="wp-block-image size-full"><img decoding="async" width="452" height="298" src="../imgs/webtangce.png" alt="堂测答题卡" class="wp-image-136"  /></figure>
+<figure><img src="../imgs/webtangce.png" alt="堂测答题卡"></figure>
 
 <p><a href="https://www.tangest.cn">堂测</a>网 Web 端能够管理班级学生信息，把学生的学号、姓名录入系统，再给每个学生分配专属的堂测二维码卡片 —— 卡片可以自助打印，有32人、64 人、128 人三种规格，不管你带的是小班还是大班，都能用；卡片耐用，学生可以反复用，不用每次都打印。</p>
 
@@ -71,7 +49,7 @@
 
 <p>第二部分：移动扫码端 —— 老师的 “课堂神器”</p>
 
-<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="534" height="395" src="../imgs/apptangce.png" alt="堂测APP示意图" class="wp-image-135"  /></figure>
+<figure><img src="../imgs/apptangce.png" alt="堂测APP示意图"></figure>
 
 <p>这是老师在手机上用的 <a href="https://www.tangest.cn">堂测APP</a>，主要用来 “课中收答案” 和 “实时看数据”。上课的时候，你先在 Web 端把小测题投影到屏幕上，学生看题后，把二维码卡片翻到对应选项，举起来。你打开堂测 APP，点击 “批量扫码”，对着学生举的卡片一扫 ——APP 会自动识别学号和选项，4-5 秒就能收完 50 人的答案。</p>
 
@@ -83,7 +61,7 @@
 
 <p>这是给学生用的<a href="https://www.tangest.cn">堂测</a>答题卡片，每张卡片都绑定了唯一的学号，四个方向分别印着 A、B、C、D。分给学生的时候，需要把卡片上的编号和学生学号对应，这样才能正确统计到学生的成绩。学生答题时，不用动笔，只要根据自己的答案，把卡片翻到对应方向 —— 比如选 A 就把 A 面朝上，举起来就行。低年级学生也能轻松操作，不用怕不会用。</p>
 
-<figure class="wp-block-image size-full"><img decoding="async" width="452" height="298" src="../imgs/qcrodetangce.png" alt="堂测答题卡" class="wp-image-136"  /></figure>
+<figure><img src="../imgs/qcrodetangce.png" alt="堂测答题卡"></figure>
 
 <p>老师呢？只要打开 “<a href="https://www.tangest.cn">堂测 APP</a>”，点击 “批量扫码”，站在讲台上对着学生举的卡片一扫 ——50 人的班级，4-5 秒就能收完所有答案，比走下去收卷子快 10 倍。而且不用担心网络，就算教室没网，扫码、统计、看结果，全程都能用；等有网了，数据会自动同步到云端，安全不丢失。</p>
 
@@ -92,21 +70,17 @@
 <p>这个设计，完美解决了 K12 的痛点：不用学生买平板、不用带手机，一张纸就能答题，家长放心，学校支持；老师不用改卷子、不用等结果，扫码就能看数据，省时又省力。</p>
 
 <p>好的工具，应该帮老师 “减负”，而不是 “增负”。如果你也被传统小测的 “耗时、滞后、模糊” 困扰，不妨试试 <a href="https://www.tangest.cn">堂测 TangEST</a>—— 不用买设备，不用改卷子，只用一张纸 + 一个 APP，就能让课堂小测 “变高效”，让你的教学 “更精准”。</p>
-
-          </div>
-          <div class="two-col-right">
-            <img src="../imgs/slogan.png" alt="堂测示意图" width="600px" />
-          </div>
-        </section>
-      </main>
-    </div>
-    <div>
-<section>
-<footer>
-          © 2025 <a href="https://www.tangest.cn">堂测</a>网 &nbsp;|&nbsp; 数据驱动，因材施教 &nbsp;•&nbsp; <a href="#contact" style="color:var(--accent);text-decoration:none">联系我们</a>
-</footer>
-</section>    
-    </div>
-
-  </body>
+</div>
+</article>
+<section class="related">
+<h2>相关阅读</h2>
+<ul>
+<li><a href="251029-1.html">别再让课堂小测 “白费力”！一张纸 + 一个 APP，帮你把教学效率提 3 倍</a><time>2025-10-29</time></li>
+<li><a href="251027-1.html">2025一线老师必备：适合老师上课使用的系统</a><time>2025-10-27</time></li>
+<li><a href="251204-2.html">精准教学的底气！来自堂测的多维度数据支撑</a><time>2025-11-06</time></li>
+</ul>
+</section>
+</main>
+<footer>© 2025-2026 <a href="https://www.tangest.cn">堂测</a>网 &nbsp;|&nbsp; 数据驱动，因材施教<br><a href="../index.html">首页</a> · <a href="../blogging.html">堂测动态</a> · <a href="../servies.html">相关报道</a> · <a href="../faq.html">帮助</a></footer>
+</body>
 </html>
