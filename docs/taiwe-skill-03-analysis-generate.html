@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TAIWE教育Skill系列之：试卷分析报告生成 - 堂测网</title>
+<meta name="description" content="TAIWE技能图鉴03：试卷分析报告生成 analysis_generate，老师提供试卷内容和成绩数据，TAIWE 输出成绩分布、各题得分率、难度和区分度、知识点掌握情况、问题诊断和教学建议，供老师讲评、教研汇总和命题改进。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="堂测网">
+<meta property="og:title" content="TAIWE教育Skill系列之：试卷分析报告生成 - 堂测网">
+<meta property="og:description" content="TAIWE技能图鉴03：试卷分析报告生成 analysis_generate，老师提供试卷内容和成绩数据，TAIWE 输出成绩分布、各题得分率、难度和区分度、知识点掌握情况、问题诊断和教学建议，供老师讲评、教研汇总和命题改进。">
+<meta property="og:url" content="https://xeenet.github.io/tangest/taiwe-skill-03-analysis-generate.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="TAIWE教育Skill系列之：试卷分析报告生成 - 堂测网">
+<meta name="twitter:description" content="TAIWE技能图鉴03：试卷分析报告生成 analysis_generate，老师提供试卷内容和成绩数据，TAIWE 输出成绩分布、各题得分率、难度和区分度、知识点掌握情况、问题诊断和教学建议，供老师讲评、教研汇总和命题改进。">
+<link rel="canonical" href="https://xeenet.github.io/tangest/taiwe-skill-03-analysis-generate.html">
+<link rel="stylesheet" href="assets/site.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"TAIWE教育Skill系列之：试卷分析报告生成","datePublished":"2026-11-11","author":{"@type":"Organization","name":"堂测"},"publisher":{"@type":"Organization","name":"堂测"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://xeenet.github.io/tangest/taiwe-skill-03-analysis-generate.html"}}
+</script>
+</head>
+<body>
+<header class="topnav"><div class="topnav-inner">
+<a class="logo" href="index.html">堂测<em>网</em></a>
+<nav>
+<a href="index.html">首页</a>
+<a href="index.html#articles" class="active">文章</a>
+<a href="blogging.html">堂测动态</a>
+<a href="servies.html">相关报道</a>
+<a href="faq.html">帮助</a>
+</nav>
+</div></header>
+<main class="main">
+<nav class="crumbs"><a href="index.html">首页</a> / <a href="index.html#articles">文章</a> / TAIWE教育Skill系列之：试卷分析报告生成</nav>
+<article class="article">
+<h1>TAIWE教育Skill系列之：试卷分析报告生成</h1>
+<div class="meta"><b>堂测小编</b> · 2026-11-11 · 堂测网</div>
+<div class="article-body">
+<p>期中考试周马上要到了，考完试、改完卷子，就是老师做班级或者年段”试卷分析报告“的时候。本期<a href="https://taiwe.cn">TAIWE</a>教育Skill系列，介绍”试卷分析报告“（analysis_generate 技能），帮助老师在考试之后，快速出分析。</p>
+试卷分析报告生成是 TAIWE 中的一个技能，英文名 analysis_generate。根据项目里老师提供试卷内容和成绩数据，TAIWE 输出成绩分布、各题得分率、难度和区分度、知识点掌握情况、问题诊断和教学建议，供老师用于讲评、教研汇总和命题改进。
+<h2>适用场景</h2>
+<ul>
+ 	<li>月考、期中、期末考试后的试卷质量分析</li>
+ 	<li>教研组、年级组汇总教学效果</li>
+ 	<li>教务处要求提交的试卷质量分析</li>
+ 	<li>不同班级成绩差异对比</li>
+ 	<li>两次考试难度变化对比</li>
+</ul>
+<h2>怎么用</h2>
+<p><a href="https://taiwe.cn">TAIWE</a> 会根据老师输入的内容自动匹配并启用相应技能。以下说法会触发：</p>
+
+<ul>
+ 	<li>帮我分析一下这次考试的试卷；</li>
+ 	<li>出一份期末考试的试卷分析报告；</li>
+ 	<li>这次月考的成绩分布怎么样？</li>
+ 	<li>帮我做个分析；</li>
+ 	<li>分析一下各题的得分情况；</li>
+ 	<li>帮我看看哪些知识点学生掌握得不好；</li>
+ 	<li>做一份试卷质量分析，要交教务处的；</li>
+ 	<li>对比一下这次考试和上次的难度变化；</li>
+ 	<li>帮我分析一下不同班级的成绩差异。</li>
+</ul>
+也可以直接输入英文技能名调用，例如 <mark>/analysis_generate</mark> ，后面跟上具体的需求。
+
+输入项：试卷内容（试卷题目）、成绩数据（学生作答数据或成绩统计）为必填；班级信息（班级名称和人数）、对比数据（上次考试数据）、分析维度、报告格式（简报或详细报告）为选填。
+
+具体使用时候，老师可以指定试卷、成绩、班级信息等文档给TAIWE助手，如果没有提供，TAIWE教师助手会自动从上下文去获取。
+
+默认的分析维度和报告参考后面的例子，如果老师有自己的要求，可以告知给TAIWE。
+
+输出项按顺序为：成绩分布统计（均分、中位数、标准差、分数段）、各题得分率、难度和区分度、知识点掌握情况、问题诊断和教学建议、可视化图表描述。
+<h2>示例（示例数据，仅作示意）</h2>
+<p class="code-line" dir="auto"><strong>高一数学期中考试试卷分析报告</strong></p>
+<p class="code-line" dir="auto"><strong>考试时间</strong>：2026年4月　<strong>参考人数</strong>：180人</p>
+<p class="code-line" dir="auto"><strong>一、成绩概况</strong></p>
+
+<table class="code-line" dir="auto">
+<thead class="code-line" dir="auto">
+<tr class="code-line" dir="auto">
+<th>统计指标</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody class="code-line" dir="auto">
+<tr class="code-line" dir="auto">
+<td>平均分</td>
+<td>78.5</td>
+</tr>
+<tr class="code-line" dir="auto">
+<td>中位数</td>
+<td>80</td>
+</tr>
+<tr class="code-line" dir="auto">
+<td>标准差</td>
+<td>15.2</td>
+</tr>
+<tr class="code-line" dir="auto">
+<td>最高分</td>
+<td>100</td>
+</tr>
+<tr class="code-line" dir="auto">
+<td>最低分</td>
+<td>23</td>
+</tr>
+<tr class="code-line" dir="auto">
+<td>及格率</td>
+<td>82.2%</td>
+</tr>
+<tr class="code-line" dir="auto">
+<td>优秀率（&gt;=90）</td>
+<td>18.3%</td>
+</tr>
+</tbody>
+</table>
+<p class="code-line" dir="auto"><strong>分数段分布</strong>：</p>
+
+<ul class="code-line" dir="auto">
+ 	<li class="code-line" dir="auto">90-100分：33人（18.3%）</li>
+ 	<li class="code-line" dir="auto">80-89分：52人（28.9%）</li>
+ 	<li class="code-line" dir="auto">70-79分：48人（26.7%）</li>
+ 	<li class="code-line" dir="auto">60-69分：27人（15.0%）</li>
+ 	<li class="code-line" dir="auto">60分以下：20人（11.1%）</li>
+</ul>
+<p class="code-line" dir="auto"><strong>二、各题得分率</strong></p>
+
+<table class="code-line" dir="auto">
+<thead class="code-line" dir="auto">
+<tr class="code-line" dir="auto">
+<th>题号</th>
+<th>知识点</th>
+<th>满分</th>
+<th>平均分</th>
+<th>得分率</th>
+<th>区分度</th>
+</tr>
+</thead>
+<tbody class="code-line" dir="auto">
+<tr class="code-line" dir="auto">
+<td>1</td>
+<td>集合运算</td>
+<td>5</td>
+<td>4.5</td>
+<td>90%</td>
+<td>0.15</td>
+</tr>
+<tr class="code-line" dir="auto">
+<td>8</td>
+<td>三角函数</td>
+<td>5</td>
+<td>2.8</td>
+<td>56%</td>
+<td>0.45</td>
+</tr>
+<tr class="code-line" dir="auto">
+<td>15</td>
+<td>函数综合</td>
+<td>12</td>
+<td>5.4</td>
+<td>45%</td>
+<td>0.52</td>
+</tr>
+</tbody>
+</table>
+<p class="code-line" dir="auto"><strong>三、知识点掌握情况</strong></p>
+
+<ul class="code-line" dir="auto">
+ 	<li class="code-line" dir="auto">掌握良好（得分率&gt;=80%）：集合、不等式</li>
+ 	<li class="code-line" dir="auto">掌握一般（60%-80%）：函数概念、数列</li>
+ 	<li class="code-line" dir="auto">掌握薄弱（&lt;60%）：三角函数综合应用、函数与方程</li>
+</ul>
+<p class="code-line" dir="auto"><strong>四、教学建议</strong></p>
+
+<ol class="code-line" dir="auto">
+ 	<li class="code-line" dir="auto">三角函数综合应用需加强训练，建议增加变式练习</li>
+ 	<li class="code-line" dir="auto">函数与方程的思想方法需在后续教学中反复渗透</li>
+ 	<li class="code-line" dir="auto">关注低分段学生的基础巩固</li>
+</ol>
+报告供老师讲评、教研汇总或按要求提交，最终使用和教学决策由老师判断。
+<h2>设计原则</h2>
+考后分析重点在定位数据反映的知识点和题型问题、辅助教师安排讲评，而不是给分数排队。这个技能就是这么设计的：只呈现有数据支撑的判断，缺数据时标注缺失，不替老师下教学评价结论。
+<h2>边界</h2>
+缺成绩数据时只做试卷结构分析（知识点覆盖、难度预估）；
+
+样本量少于30人标注统计意义有限；
+
+数据不完整时基于已有数据分析并标注缺失；
+
+数据格式不统一先整理成能算的格式再分析。
+
+技能不对学生个人公开排名，不基于单一考试下教学评价结论，不编造没有数据支撑的结论，不直接评判教师教学能力。
+<h2>FAQ</h2>
+<h3>没有成绩数据可以用吗？</h3>
+可以，但只能做试卷结构分析，得分率等依赖作答数据的内容无法生成。
+<h3>只有一个班、人数较少怎么办？</h3>
+可以分析，样本量少于30人时报告会标注统计意义有限。
+<h3>报告能直接交教务处吗？</h3>
+可选择简报或详细报告，按学校要求选用；报告面向老师，是否直接提交由老师判断。
+<h3>会给出学生个人排名吗？</h3>
+不会，技能不对学生个人进行公开排名。
+<h3>分析完能接着做什么？</h3>
+可在相应意图和数据条件具备时搭配以下技能：
+
+exam_compose 反馈下次组卷、question_generate 生成补救练习、error_book 整理高频错题、learning_diagnose 做学情诊断、learning_path 制定学习计划。
+
+</div>
+</article>
+<section class="related">
+<h2>相关阅读</h2>
+<ul>
+<li><a href="taiwe-skill-01-adaptive-hint-sequence-designer.html">TAIWE技能图鉴01：分级提示设计，让辅导不直接给答案的提示阶梯</a><time>2026-11-13</time></li>
+<li><a href="taiwe-skill-04-annual_summary.html">年度工作总结</a><time>2026-11-13</time></li>
+<li><a href="taiwe%e6%95%99%e5%ad%a6skill%e7%b3%bb%e5%88%97%ef%bc%9a%e4%bd%9c%e4%b8%9a-%e8%af%95%e5%8d%b7%e5%ae%a2%e8%a7%82%e9%a2%98%e8%87%aa%e5%8a%a8%e6%89%b9%e6%94%b9.html">TAIWE教学Skill系列：作业/试卷客观题自动批改</a><time>2026-11-09</time></li>
+</ul>
+</section>
+</main>
+<footer>© 2025-2026 <a href="https://www.tangest.cn">堂测</a>网 &nbsp;|&nbsp; 数据驱动，因材施教<br><a href="index.html">首页</a> · <a href="blogging.html">堂测动态</a> · <a href="servies.html">相关报道</a> · <a href="faq.html">帮助</a></footer>
+</body>
+</html>
