@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>档案管理方案 - 堂测网</title>
+<meta name="description" content="教务档案散、乱、借了不还，多半是没定过规则。本期讲 TAIWE 的 archive_manage 技能：给出范围和分类，输出一整套方案：分类、编号、存档、借阅、销毁、数字化。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="堂测网">
+<meta property="og:title" content="档案管理方案 - 堂测网">
+<meta property="og:description" content="教务档案散、乱、借了不还，多半是没定过规则。本期讲 TAIWE 的 archive_manage 技能：给出范围和分类，输出一整套方案：分类、编号、存档、借阅、销毁、数字化。">
+<meta property="og:url" content="https://xeenet.github.io/tangest/taiwe-skill-05-archive_manage.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="档案管理方案 - 堂测网">
+<meta name="twitter:description" content="教务档案散、乱、借了不还，多半是没定过规则。本期讲 TAIWE 的 archive_manage 技能：给出范围和分类，输出一整套方案：分类、编号、存档、借阅、销毁、数字化。">
+<link rel="canonical" href="https://xeenet.github.io/tangest/taiwe-skill-05-archive_manage.html">
+<link rel="stylesheet" href="assets/site.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"档案管理方案","datePublished":"2026-11-16","author":{"@type":"Organization","name":"堂测"},"publisher":{"@type":"Organization","name":"堂测"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://xeenet.github.io/tangest/taiwe-skill-05-archive_manage.html"}}
+</script>
+</head>
+<body>
+<header class="topnav"><div class="topnav-inner">
+<a class="logo" href="index.html">堂测<em>网</em></a>
+<nav>
+<a href="index.html">首页</a>
+<a href="index.html#articles" class="active">文章</a>
+<a href="blogging.html">堂测动态</a>
+<a href="servies.html">相关报道</a>
+<a href="faq.html">帮助</a>
+</nav>
+</div></header>
+<main class="main">
+<nav class="crumbs"><a href="index.html">首页</a> / <a href="index.html#articles">文章</a> / 档案管理方案</nav>
+<article class="article">
+<h1>档案管理方案</h1>
+<div class="meta"><b>堂测小编</b> · 2026-11-16 · 堂测网</div>
+<div class="article-body">
+<p>教务档案管理方案，是 <a href="https://taiwe.cn">TAIWE</a> 中用于制定教务档案管理办法的技能（技能名 archive_manage）。老师提供档案管理范围和档案分类需求，它输出一份完整方案，覆盖分类体系、编号规则、存档流程、借阅制度、档案销毁和数字化管理。</p>
+<h2>场景：档案乱，多半是规则没定</h2>
+<p>期末材料集中上交，不知道放哪一摞；往年试卷存档要翻遍柜子；借出的档案没有登记，到期没人处理。这些情况的共同点，是收、分、编、借四件事没有统一规则可循。这个技能面向教务主任、教务干事、档案管理员和校长办公室，用于整理教务档案、建立档案系统、设计借阅流程。</p>
+<h2>怎么用</h2>
+<p>当老师说“帮我制定教务档案管理办法”“教学资料怎么分类存档”“档案编号规则怎么定”“教师业务档案怎么管理”“学生成绩档案怎么归档”“试卷存档方案怎么制定”“教研活动资料怎么整理归档”“电子档案和纸质档案怎么统一管理”“档案借阅流程怎么规范”“到期档案怎么处理”时，<a href="https://taiwe.cn">TAIWE</a> 会自动匹配并启用该技能；也可直接输入英文技能名调用，例如 /archive_manage。</p>
+<p>输入分两类：
+- 必填：档案管理范围（如教务处全部档案）、档案分类需求（如教学管理、教师业务、学籍管理、考试管理）。
+- 选填：现有档案情况、档案保管期限要求、存储条件（库房/电子系统）、访问权限层级、数字化需求、合规要求（上级规定）。不填时按常用规则给建议：保管期限按国家规定、存储条件纸质+电子双轨、访问权限分级管理、数字化逐步数字化、合规要求按教育档案管理规定。</p>
+<p>输出为完整方案，依次是分类体系（包含一级、二级分类，并设置保管期限）、编号规则（学校代码-类别代码-年度-流水号，成绩与试卷有专用规则）、存档流程（收集、整理、归档）、借阅制度（申请、审批、登记、借出、归还、注销）、档案销毁（鉴定、清册、审批、2人以上监销）、数字化管理（新增纸电双轨、存量分批数字化）。</p>
+<h2>学段适配</h2>
+<p>不同学段的档案重点不一样。小学档案类型相对简单，重点关注学生成长档案和素质评价档案；初中涉及中考相关档案（报名表、成绩、录取等）和实验操作考试档案；高中涉及高考档案、综合素质评价、选课走班记录等，档案量大且复杂。</p>
+<h2>示例</h2>
+<p>以下均为示例数据，仅作示意。一份“2026年教学工作计划”归入教学管理类 JX，二级分类 JX-01，保管期限 10 年，编号 XX-JX-2026-001。查找时通过编号与归档记录对照查找即可，不必依赖记忆柜位；电子文件名与纸质档案同号。借阅方面，一般档案本部门人员可借，借阅期限一般不超过 7 天，登记与注销留痕。其余一级分类还有 JS（教师业务类）、XJ（学籍管理类）、KS（考试管理类）、JY（教研活动类）、SB（设备教材类）；特殊编号如学生成绩档案 XX-CJ-07-01-001、试卷档案 XX-SJ-SX-QZ-2026；二级分类也有保管期限为“永久”的，如 JX-04 教学工作总结。</p>
+<h2>设计原则</h2>
+<p>设计原则是“先定规则，再收材料”：先出分类和编号，再谈收集归档。</p>
+<h2>边界</h2>
+<p>它输出方案框架，不代替执行。明确不做：不处理非教务类档案（如人事档案、财务档案）；不代替档案管理员执行具体操作；不处理档案的物理搬迁或库房建设；不涉及保密档案的具体内容。示例中的分类代码、保管期限、编号和借阅期限均为示意，具体以学校实际和上级规定为准。</p>
+<h2>FAQ</h2>
+<p><strong>学校档案本来就分类混乱，能用吗？</strong> 可以，方案会提供重新分类整理的建议，并建议利用假期集中整理。
+<strong>历史档案缺失怎么办？</strong> 建议逐步补建，优先补建重要档案。
+<strong>存储空间不足呢？</strong> 建议加快数字化进程，或申请增加库房面积。
+<strong>电子档案系统出故障？</strong> 建议建立纸质档案兜底机制和数据定期备份制度。
+<strong>档案损毁怎么办？</strong> 建议建立档案抢救修复机制，重要档案多重备份。
+<strong>能帮我搬档案、查人事材料吗？</strong> 不能，这两类都不在范围内。
+<strong>能和其他技能配合吗？</strong> 新数据归档可联动 exam_arrange 获取考试安排数据、生成考试档案编号；电子化管理可联动 room_allocate 预留存储空间和文件命名规范；到期提醒可联动 report_generate 生成档案管理统计报告和到期提醒；批量整理可联动 timetable_check 生成整理时间表。</p>
+
+
+</div>
+</article>
+<section class="related">
+<h2>相关阅读</h2>
+<ul>
+<li><a href="gongkaike-10-zhong-yong-fa.html">公开课神器“堂测”：10 种用法，拿去就能试</a><time>2026-11-18</time></li>
+<li><a href="yi-zhang-tu-yi-ju-hua-hua-xue-shi-yan-3d-fang-zhen-ke-jian.html">一张图、一句话，把高中化学教材里的实验生成3D可交互仿真课件</a><time>2026-11-18</time></li>
+<li><a href="gong-kai-ke-xian-ding-na-yi-jian.html">公开课硬要加 AI，先定哪一件</a><time>2026-11-18</time></li>
+</ul>
+</section>
+</main>
+<footer>© 2025-2026 <a href="https://www.tangest.cn">堂测</a>网 &nbsp;|&nbsp; 数据驱动，因材施教<br><a href="index.html">首页</a> · <a href="blogging.html">堂测动态</a> · <a href="servies.html">相关报道</a> · <a href="faq.html">帮助</a></footer>
+</body>
+</html>
